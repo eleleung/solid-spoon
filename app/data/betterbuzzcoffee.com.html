@@ -1,0 +1,6673 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]> <html class="ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+ <script type="application/vnd.locksmith+json" data-locksmith>{"version":"v36","locked":false,"initialized":true,"scope":"index","access_granted":true,"access_denied":false,"requires_customer":false,"manual_lock":false,"remote_lock":false,"has_timeout":false,"remote_rendered":null,"hide_resource":false,"hide_links_to_resource":false,"transparent":true,"locks":{"all":[],"opened":[]},"keys":[],"keys_signature":"7ac684d37c07a2778387a74b5121fa8748baed72fe5cfd4600f49b7c202a0009","state":{"template":"index","theme":135330988265,"product":null,"collection":"featured-products","page":null,"blog":null,"article":null,"app":null},"now":1698788128,"path":"\/","locale_root_url":"\/","canonical_url":"https:\/\/betterbuzzcoffee.com\/","customer_id":null,"customer_id_signature":"7ac684d37c07a2778387a74b5121fa8748baed72fe5cfd4600f49b7c202a0009","cart":null}</script><script data-locksmith>!function(){var require=undefined,reqwest=function(){function succeed(e){var t=protocolRe.exec(e.url);return t=t&&t[1]||context.location.protocol,httpsRe.test(t)?twoHundo.test(e.request.status):!!e.request.response}function handleReadyState(e,t,n){return function(){return e._aborted?n(e.request):e._timedOut?n(e.request,"Request is aborted: timeout"):void(e.request&&4==e.request[readyState]&&(e.request.onreadystatechange=noop,succeed(e)?t(e.request):n(e.request)))}}function setHeaders(e,t){var n,s=t.headers||{};s.Accept=s.Accept||defaultHeaders.accept[t.type]||defaultHeaders.accept["*"];var r="undefined"!=typeof FormData&&t.data instanceof FormData;for(n in!t.crossOrigin&&!s[requestedWith]&&(s[requestedWith]=defaultHeaders.requestedWith),!s[contentType]&&!r&&(s[contentType]=t.contentType||defaultHeaders.contentType),s)s.hasOwnProperty(n)&&"setRequestHeader"in e&&e.setRequestHeader(n,s[n])}function setCredentials(e,t){"undefined"!=typeof t.withCredentials&&"undefined"!=typeof e.withCredentials&&(e.withCredentials=!!t.withCredentials)}function generalCallback(e){lastValue=e}function urlappend(e,t){return e+(/[?]/.test(e)?"&":"?")+t}function handleJsonp(e,t,n,s){var r=uniqid++,a=e.jsonpCallback||"callback",o=e.jsonpCallbackName||reqwest.getcallbackPrefix(r),i=new RegExp("((^|[?]|&)"+a+")=([^&]+)"),l=s.match(i),c=doc.createElement("script"),u=0,d=-1!==navigator.userAgent.indexOf("MSIE 10.0");return l?"?"===l[3]?s=s.replace(i,"$1="+o):o=l[3]:s=urlappend(s,a+"="+o),context[o]=generalCallback,c.type="text/javascript",c.src=s,c.async=!0,"undefined"!=typeof c.onreadystatechange&&!d&&(c.htmlFor=c.id="_reqwest_"+r),c.onload=c.onreadystatechange=function(){if(c[readyState]&&"complete"!==c[readyState]&&"loaded"!==c[readyState]||u)return!1;c.onload=c.onreadystatechange=null,c.onclick&&c.onclick(),t(lastValue),lastValue=undefined,head.removeChild(c),u=1},head.appendChild(c),{abort:function(){c.onload=c.onreadystatechange=null,n({},"Request is aborted: timeout",{}),lastValue=undefined,head.removeChild(c),u=1}}}function getRequest(e,t){var n,s=this.o,r=(s.method||"GET").toUpperCase(),a="string"==typeof s?s:s.url,o=!1!==s.processData&&s.data&&"string"!=typeof s.data?reqwest.toQueryString(s.data):s.data||null,i=!1;return("jsonp"==s.type||"GET"==r)&&o&&(a=urlappend(a,o),o=null),"jsonp"==s.type?handleJsonp(s,e,t,a):((n=s.xhr&&s.xhr(s)||xhr(s)).open(r,a,!1!==s.async),setHeaders(n,s),setCredentials(n,s),context[xDomainRequest]&&n instanceof context[xDomainRequest]?(n.onload=e,n.onerror=t,n.onprogress=function(){},i=!0):n.onreadystatechange=handleReadyState(this,e,t),s.before&&s.before(n),i?setTimeout(function(){n.send(o)},200):n.send(o),n)}function Reqwest(e,t){this.o=e,this.fn=t,init.apply(this,arguments)}function setType(e){return null===e?undefined:e.match("json")?"json":e.match("javascript")?"js":e.match("text")?"html":e.match("xml")?"xml":void 0}function init(o,fn){function complete(e){for(o.timeout&&clearTimeout(self.timeout),self.timeout=null;0<self._completeHandlers.length;)self._completeHandlers.shift()(e)}function success(resp){var type=o.type||resp&&setType(resp.getResponseHeader("Content-Type"));resp="jsonp"!==type?self.request:resp;var filteredResponse=globalSetupOptions.dataFilter(resp.responseText,type),r=filteredResponse;try{resp.responseText=r}catch(e){}if(r)switch(type){case"json":try{resp=context.JSON?context.JSON.parse(r):eval("("+r+")")}catch(err){return error(resp,"Could not parse JSON in response",err)}break;case"js":resp=eval(r);break;case"html":resp=r;break;case"xml":resp=resp.responseXML&&resp.responseXML.parseError&&resp.responseXML.parseError.errorCode&&resp.responseXML.parseError.reason?null:resp.responseXML}for(self._responseArgs.resp=resp,self._fulfilled=!0,fn(resp),self._successHandler(resp);0<self._fulfillmentHandlers.length;)resp=self._fulfillmentHandlers.shift()(resp);complete(resp)}function timedOut(){self._timedOut=!0,self.request.abort()}function error(e,t,n){for(e=self.request,self._responseArgs.resp=e,self._responseArgs.msg=t,self._responseArgs.t=n,self._erred=!0;0<self._errorHandlers.length;)self._errorHandlers.shift()(e,t,n);complete(e)}this.url="string"==typeof o?o:o.url,this.timeout=null,this._fulfilled=!1,this._successHandler=function(){},this._fulfillmentHandlers=[],this._errorHandlers=[],this._completeHandlers=[],this._erred=!1,this._responseArgs={};var self=this;fn=fn||function(){},o.timeout&&(this.timeout=setTimeout(function(){timedOut()},o.timeout)),o.success&&(this._successHandler=function(){o.success.apply(o,arguments)}),o.error&&this._errorHandlers.push(function(){o.error.apply(o,arguments)}),o.complete&&this._completeHandlers.push(function(){o.complete.apply(o,arguments)}),this.request=getRequest.call(this,success,error)}function reqwest(e,t){return new Reqwest(e,t)}function normalize(e){return e?e.replace(/\r?\n/g,"\r\n"):""}function serial(e,t){var n,s,r,a,o=e.name,i=e.tagName.toLowerCase(),l=function(e){e&&!e.disabled&&t(o,normalize(e.attributes.value&&e.attributes.value.specified?e.value:e.text))};if(!e.disabled&&o)switch(i){case"input":/reset|button|image|file/i.test(e.type)||(n=/checkbox/i.test(e.type),s=/radio/i.test(e.type),r=e.value,(!n&&!s||e.checked)&&t(o,normalize(n&&""===r?"on":r)));break;case"textarea":t(o,normalize(e.value));break;case"select":if("select-one"===e.type.toLowerCase())l(0<=e.selectedIndex?e.options[e.selectedIndex]:null);else for(a=0;e.length&&a<e.length;a++)e.options[a].selected&&l(e.options[a])}}function eachFormElement(){var e,t,a=this,n=function(e,t){var n,s,r;for(n=0;n<t.length;n++)for(r=e[byTag](t[n]),s=0;s<r.length;s++)serial(r[s],a)};for(t=0;t<arguments.length;t++)e=arguments[t],/input|select|textarea/i.test(e.tagName)&&serial(e,a),n(e,["input","select","textarea"])}function serializeQueryString(){return reqwest.toQueryString(reqwest.serializeArray.apply(null,arguments))}function serializeHash(){var n={};return eachFormElement.apply(function(e,t){e in n?(n[e]&&!isArray(n[e])&&(n[e]=[n[e]]),n[e].push(t)):n[e]=t},arguments),n}function buildParams(e,t,n,s){var r,a,o,i=/\[\]$/;if(isArray(t))for(a=0;t&&a<t.length;a++)o=t[a],n||i.test(e)?s(e,o):buildParams(e+"["+("object"==typeof o?a:"")+"]",o,n,s);else if(t&&"[object Object]"===t.toString())for(r in t)buildParams(e+"["+r+"]",t[r],n,s);else s(e,t)}var context=this,XHR2;if("window"in context)var doc=document,byTag="getElementsByTagName",head=doc[byTag]("head")[0];else try{XHR2=require("xhr2")}catch(ex){throw new Error("Peer dependency `xhr2` required! Please npm install xhr2")}var httpsRe=/^http/,protocolRe=/(^\w+):\/\//,twoHundo=/^(20\d|1223)$/,readyState="readyState",contentType="Content-Type",requestedWith="X-Requested-With",uniqid=0,callbackPrefix="reqwest_"+ +new Date,lastValue,xmlHttpRequest="XMLHttpRequest",xDomainRequest="XDomainRequest",noop=function(){},isArray="function"==typeof Array.isArray?Array.isArray:function(e){return e instanceof Array},defaultHeaders={contentType:"application/x-www-form-urlencoded",requestedWith:xmlHttpRequest,accept:{"*":"text/javascript, text/html, application/xml, text/xml, */*",xml:"application/xml, text/xml",html:"text/html",text:"text/plain",json:"application/json, text/javascript",js:"application/javascript, text/javascript"}},xhr=function(e){if(!0!==e.crossOrigin)return context[xmlHttpRequest]?new XMLHttpRequest:XHR2?new XHR2:new ActiveXObject("Microsoft.XMLHTTP");var t=context[xmlHttpRequest]?new XMLHttpRequest:null;if(t&&"withCredentials"in t)return t;if(context[xDomainRequest])return new XDomainRequest;throw new Error("Browser does not support cross-origin requests")},globalSetupOptions={dataFilter:function(e){return e}};return Reqwest.prototype={abort:function(){this._aborted=!0,this.request.abort()},retry:function(){init.call(this,this.o,this.fn)},then:function(e,t){return e=e||function(){},t=t||function(){},this._fulfilled?this._responseArgs.resp=e(this._responseArgs.resp):this._erred?t(this._responseArgs.resp,this._responseArgs.msg,this._responseArgs.t):(this._fulfillmentHandlers.push(e),this._errorHandlers.push(t)),this},always:function(e){return this._fulfilled||this._erred?e(this._responseArgs.resp):this._completeHandlers.push(e),this},fail:function(e){return this._erred?e(this._responseArgs.resp,this._responseArgs.msg,this._responseArgs.t):this._errorHandlers.push(e),this},"catch":function(e){return this.fail(e)}},reqwest.serializeArray=function(){var n=[];return eachFormElement.apply(function(e,t){n.push({name:e,value:t})},arguments),n},reqwest.serialize=function(){if(0===arguments.length)return"";var e,t=Array.prototype.slice.call(arguments,0);return(e=t.pop())&&e.nodeType&&t.push(e)&&(e=null),e&&(e=e.type),("map"==e?serializeHash:"array"==e?reqwest.serializeArray:serializeQueryString).apply(null,t)},reqwest.toQueryString=function(e,t){var n,s,r=t||!1,a=[],o=encodeURIComponent,i=function(e,t){t="function"==typeof t?t():null==t?"":t,a[a.length]=o(e)+"="+o(t)};if(isArray(e))for(s=0;e&&s<e.length;s++)i(e[s].name,e[s].value);else for(n in e)e.hasOwnProperty(n)&&buildParams(n,e[n],r,i);return a.join("&").replace(/%20/g,"+")},reqwest.getcallbackPrefix=function(){return callbackPrefix},reqwest.compat=function(e,t){return e&&(e.type&&(e.method=e.type)&&delete e.type,e.dataType&&(e.type=e.dataType),e.jsonpCallback&&(e.jsonpCallbackName=e.jsonpCallback)&&delete e.jsonpCallback,e.jsonp&&(e.jsonpCallback=e.jsonp)),new Reqwest(e,t)},reqwest.ajaxSetup=function(e){for(var t in e=e||{})globalSetupOptions[t]=e[t]},reqwest}();
+/*!
+  * Reqwest! A general purpose XHR connection manager
+  * license MIT (c) Dustin Diaz 2015
+  * https://github.com/ded/reqwest
+  */!function(){var o=window.Locksmith={},e=document.querySelector('script[type="application/vnd.locksmith+json"]'),n=e&&e.innerHTML;if(o.state={},o.util={},o.loading=!1,n)try{o.state=JSON.parse(n)}catch(u){}if(document.addEventListener&&document.querySelector){var s,r,a,t=[76,79,67,75,83,77,73,84,72,49,49],i=function(){r=t.slice(0)},l="style",c=function(e){e&&27!==e.keyCode&&"click"!==e.type||(document.removeEventListener("keydown",c),document.removeEventListener("click",c),s&&document.body.removeChild(s),s=null)};i(),document.addEventListener("keyup",function(e){if(e.keyCode===r[0]){if(clearTimeout(a),r.shift(),0<r.length)return void(a=setTimeout(i,1e3));i(),c(),(s=document.createElement("div"))[l].width="50%",s[l].maxWidth="1000px",s[l].height="85%",s[l].border="1px rgba(0, 0, 0, 0.2) solid",s[l].background="rgba(255, 255, 255, 0.99)",s[l].borderRadius="4px",s[l].position="fixed",s[l].top="50%",s[l].left="50%",s[l].transform="translateY(-50%) translateX(-50%)",s[l].boxShadow="0 2px 5px rgba(0, 0, 0, 0.3), 0 0 100vh 100vw rgba(0, 0, 0, 0.5)",s[l].zIndex="2147483645";var t=document.createElement("textarea");t.value=JSON.stringify(JSON.parse(n),null,2),t[l].border="none",t[l].display="block",t[l].boxSizing="border-box",t[l].width="100%",t[l].height="100%",t[l].background="transparent",t[l].padding="22px",t[l].fontFamily="monospace",t[l].fontSize="14px",t[l].color="#333",t[l].resize="none",t[l].outline="none",t.readOnly=!0,s.appendChild(t),document.body.appendChild(s),t.addEventListener("click",function(e){e.stopImmediatePropagation()}),t.select(),document.addEventListener("keydown",c),document.addEventListener("click",c)}})}o.isEmbedded=-1!==window.location.search.indexOf("_ab=0&_fd=0&_sc=1"),o.path=o.state.path||window.location.pathname,o.basePath=o.state.locale_root_url.concat("/apps/locksmith").replace(/^\/\//,"/"),o.reloading=!1,o.util.console=window.console||{log:function(){},error:function(){}},o.util.makeUrl=function(e,t){var n,s=o.basePath+e,r=[],a=o.cache();for(n in a)r.push(n+"="+encodeURIComponent(a[n]));for(n in t)r.push(n+"="+encodeURIComponent(t[n]));return o.state.customer_id&&(r.push("customer_id="+encodeURIComponent(o.state.customer_id)),r.push("customer_id_signature="+encodeURIComponent(o.state.customer_id_signature))),s+=(-1===s.indexOf("?")?"?":"&")+r.join("&")},o._initializeCallbacks=[],o.on=function(e,t){if("initialize"!==e)throw'Locksmith.on() currently only supports the "initialize" event';o._initializeCallbacks.push(t)},o.initializeSession=function(e){if(!o.isEmbedded){var t=!1,n=!0,s=!0;(e=e||{}).silent&&(s=n=!(t=!0)),o.ping({silent:t,spinner:n,reload:s,callback:function(){o._initializeCallbacks.forEach(function(e){e()})}})}},o.cache=function(e){var t={};try{var n=function r(e){return(document.cookie.match("(^|; )"+e+"=([^;]*)")||0)[2]};t=JSON.parse(decodeURIComponent(n("locksmith-params")||"{}"))}catch(u){}if(e){for(var s in e)t[s]=e[s];document.cookie="locksmith-params=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/",document.cookie="locksmith-params="+encodeURIComponent(JSON.stringify(t))+"; path=/"}return t},o.cache.cart=o.state.cart,o.cache.cartLastSaved=null,o.params=o.cache(),o.util.reload=function(){o.reloading=!0;try{window.location.href=window.location.href.replace(/#.*/,"")}catch(u){o.util.console.error("Preferred reload method failed",u),window.location.reload()}},o.cache.saveCart=function(e){if(!o.cache.cart||o.cache.cart===o.cache.cartLastSaved)return e?e():null;var t=o.cache.cartLastSaved;o.cache.cartLastSaved=o.cache.cart,reqwest({url:"/cart/update.json",method:"post",type:"json",data:{attributes:{locksmith:o.cache.cart}},complete:e,error:function(e){if(o.cache.cartLastSaved=t,!o.reloading)throw e}})},o.util.spinnerHTML='<style>body{background:#FFF}@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}#loading{display:flex;width:100%;height:50vh;color:#777;align-items:center;justify-content:center}#loading .spinner{display:block;animation:spin 600ms linear infinite;position:relative;width:50px;height:50px}#loading .spinner-ring{stroke:currentColor;stroke-dasharray:100%;stroke-width:2px;stroke-linecap:round;fill:none}</style><div id="loading"><div class="spinner"><svg width="100%" height="100%"><svg preserveAspectRatio="xMinYMin"><circle class="spinner-ring" cx="50%" cy="50%" r="45%"></circle></svg></svg></div></div>',o.util.clobberBody=function(e){document.body.innerHTML=e},o.util.clobberDocument=function(e){e.responseText&&(e=e.responseText),document.documentElement&&document.removeChild(document.documentElement);var t=document.open("text/html","replace");t.writeln(e),t.close(),setTimeout(function(){var e=t.querySelector("[autofocus]");e&&e.focus()},100)},o.util.serializeForm=function(e){if(e&&"FORM"===e.nodeName){var t,n,s={};for(t=e.elements.length-1;0<=t;t-=1)if(""!==e.elements[t].name)switch(e.elements[t].nodeName){case"INPUT":switch(e.elements[t].type){default:case"text":case"hidden":case"password":case"button":case"reset":case"submit":s[e.elements[t].name]=e.elements[t].value;break;case"checkbox":case"radio":e.elements[t].checked&&(s[e.elements[t].name]=e.elements[t].value);break;case"file":}break;case"TEXTAREA":s[e.elements[t].name]=e.elements[t].value;break;case"SELECT":switch(e.elements[t].type){case"select-one":s[e.elements[t].name]=e.elements[t].value;break;case"select-multiple":for(n=e.elements[t].options.length-1;0<=n;n-=1)e.elements[t].options[n].selected&&(s[e.elements[t].name]=e.elements[t].options[n].value)}break;case"BUTTON":switch(e.elements[t].type){case"reset":case"submit":case"button":s[e.elements[t].name]=e.elements[t].value}}return s}},o.util.on=function(e,a,o,t){t=t||document;var i="locksmith-"+e+a,n=function(e){var t=e.target,n=e.target.parentElement,s=t.className.baseVal||t.className||"",r=n.className.baseVal||n.className||"";("string"==typeof s&&-1!==s.split(/\s+/).indexOf(a)||"string"==typeof r&&-1!==r.split(/\s+/).indexOf(a))&&!e[i]&&(e[i]=!0,o(e))};t.attachEvent?t.attachEvent(e,n):t.addEventListener(e,n,!1)},o.util.enableActions=function(e){o.util.on("click","locksmith-action",function(e){e.preventDefault();var t=e.target;t.dataset.confirmWith&&!confirm(t.dataset.confirmWith)||(t.disabled=!0,t.innerText=t.dataset.disableWith,o.post("/action",t.dataset.locksmithParams,{spinner:!1,type:"text",success:function(e){(e=JSON.parse(e.responseText)).message&&alert(e.message),o.util.reload()}}))},e)},o.util.inject=function(e,t){var n=["data","locksmith","append"];if(-1!==t.indexOf(n.join("-"))){var s=document.createElement("div");s.innerHTML=t,e.appendChild(s)}else e.innerHTML=t;var r,a,o=e.querySelectorAll("script");for(a=0;a<o.length;++a){r=o[a];var i=document.createElement("script");if(r.type&&(i.type=r.type),r.src)i.src=r.src;else{var l=document.createTextNode(r.innerHTML);i.appendChild(l)}e.appendChild(i)}var c=e.querySelector("[autofocus]");c&&c.focus()},o.post=function(e,t,n){!1!==(n=n||{}).spinner&&o.util.clobberBody(o.util.spinnerHTML);var s={};n.container===document?(s.layout=1,n.success=function(e){document.getElementById(n.container);o.util.clobberDocument(e)}):n.container&&(s.layout=0,n.success=function(e){var t=document.getElementById(n.container);o.util.inject(t,e),t.id===t.firstChild.id&&t.parentElement.replaceChild(t.firstChild,t)}),o.loading=!0;var r=o.util.makeUrl(e,s);reqwest({url:r,method:"post",type:n.type||"html",data:t,complete:function(){o.loading=!1},error:function(e){if(!o.reloading)if("dashboard.weglot.com"!==window.location.host){if(!n.silent)throw alert("Something went wrong! Please refresh and try again."),e;console.error(e)}else console.error(e)},success:n.success||o.util.clobberDocument})},o.postResource=function(e,t){e.path=o.path,e.search=window.location.search,e.state=o.state,e.passcode&&(e.passcode=e.passcode.trim()),e.email&&(e.email=e.email.trim()),e.state.cart=o.cache.cart,e.locksmith_json=o.jsonTag,e.locksmith_json_signature=o.jsonTagSignature,o.post("/resource",e,t)},o.ping=function(e){if(!o.isEmbedded){e=e||{};var t=function(){e.reload?o.util.reload():"function"==typeof e.callback&&e.callback()};o.post("/ping",{path:o.path,search:window.location.search,state:o.state},{spinner:!!e.spinner,silent:"undefined"==typeof e.silent||e.silent,type:"text",success:function(e){(e=JSON.parse(e.responseText)).messages&&0<e.messages.length&&o.showMessages(e.messages),e.cart&&o.cache.cart!==e.cart?(o.cache.cart=e.cart,o.cache.saveCart(function(){t(),e.cart&&e.cart.match(/^.+:/)&&o.util.reload()})):t()}})}},o.timeoutMonitor=function(){var e=o.cache.cart;o.ping({callback:function(){e!==o.cache.cart||setTimeout(function(){o.timeoutMonitor()},6e4)}})},o.showMessages=function(e){var t=document.createElement("div");t.style.position="fixed",t.style.left=0,t.style.right=0,t.style.bottom="-50px",t.style.opacity=0,t.style.background="#191919",t.style.color="#ddd",t.style.transition="bottom 0.2s, opacity 0.2s",t.style.zIndex=999999,t.innerHTML="        <style>          .locksmith-ab .locksmith-b { display: none; }          .locksmith-ab.toggled .locksmith-b { display: flex; }          .locksmith-ab.toggled .locksmith-a { display: none; }          .locksmith-flex { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 10px 20px; }          .locksmith-message + .locksmith-message { border-top: 1px #555 solid; }          .locksmith-message a { color: inherit; font-weight: bold; }          .locksmith-message a:hover { color: inherit; opacity: 0.8; }          a.locksmith-ab-toggle { font-weight: inherit; text-decoration: underline; }          .locksmith-text { flex-grow: 1; }          .locksmith-cta { flex-grow: 0; text-align: right; }          .locksmith-cta button { transform: scale(0.8); transform-origin: left; }          .locksmith-cta > * { display: block; }          .locksmith-cta > * + * { margin-top: 10px; }          .locksmith-message a.locksmith-close { flex-grow: 0; text-decoration: none; margin-left: 15px; font-size: 30px; font-family: monospace; display: block; padding: 2px 10px; }                    @media screen and (max-width: 600px) {            .locksmith-wide-only { display: none !important; }            .locksmith-flex { padding: 0 15px; }            .locksmith-flex > * { margin-top: 5px; margin-bottom: 5px; }            .locksmith-cta { text-align: left; }          }                    @media screen and (min-width: 601px) {            .locksmith-narrow-only { display: none !important; }          }        </style>      "+e.map(function(e){return'<div class="locksmith-message">'+e+"</div>"}).join(""),document.body.appendChild(t),document.body.style.position="relative",document.body.parentElement.style.paddingBottom=t.offsetHeight+"px",setTimeout(function(){t.style.bottom=0,t.style.opacity=1},50),o.util.on("click","locksmith-ab-toggle",function(e){e.preventDefault();for(var t=e.target.parentElement;-1===t.className.split(" ").indexOf("locksmith-ab");)t=t.parentElement;-1!==t.className.split(" ").indexOf("toggled")?t.className=t.className.replace("toggled",""):t.className=t.className+" toggled"}),o.util.enableActions(t)}}()}();</script>
+      <script data-locksmith>Locksmith.cache.cart=null</script>
+
+  <script data-locksmith>Locksmith.jsonTag="\u003cscript type=\"application\/vnd.locksmith+json\" data-locksmith\u003e{\"version\":\"v36\",\"locked\":false,\"initialized\":true,\"scope\":\"index\",\"access_granted\":true,\"access_denied\":false,\"requires_customer\":false,\"manual_lock\":false,\"remote_lock\":false,\"has_timeout\":false,\"remote_rendered\":null,\"hide_resource\":false,\"hide_links_to_resource\":false,\"transparent\":true,\"locks\":{\"all\":[],\"opened\":[]},\"keys\":[],\"keys_signature\":\"7ac684d37c07a2778387a74b5121fa8748baed72fe5cfd4600f49b7c202a0009\",\"state\":{\"template\":\"index\",\"theme\":135330988265,\"product\":null,\"collection\":\"featured-products\",\"page\":null,\"blog\":null,\"article\":null,\"app\":null},\"now\":1698788128,\"path\":\"\\\/\",\"locale_root_url\":\"\\\/\",\"canonical_url\":\"https:\\\/\\\/betterbuzzcoffee.com\\\/\",\"customer_id\":null,\"customer_id_signature\":\"7ac684d37c07a2778387a74b5121fa8748baed72fe5cfd4600f49b7c202a0009\",\"cart\":null}\u003c\/script\u003e";Locksmith.jsonTagSignature="fa7f5b4449d28d9f21ee359606f2478b8031657e4a2fccfa2ddd8714d56b292c"</script>
+ <link rel="stylesheet" href="https://dropinblog.com/css/shopify.css" type="text/css">
+  
+<title>
+    Better Buzz Coffee
+</title>
+
+
+<meta name="description" content="Better Buzz Coffee Roasters | San Diego, CA based Small Batch Coffee Roasters. Roasting organic &amp; specialty coffees with crafted coffee blends.">
+
+
+
+  <!-- Blockshop Theme Version 2.3.2 by Troop Themes - http://troopthemes.com/  -->
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <link rel="shortcut icon" type="image/png" href="//betterbuzzcoffee.com/cdn/shop/t/44/assets/favicon.png?v=174636148489267105551663012789" />
+  
+
+
+  <link rel="canonical" href="https://betterbuzzcoffee.com/" />
+  
+  
+
+
+  <meta property="og:url" content="https://betterbuzzcoffee.com/">
+  <meta property="og:site_name" content="Better Buzz Coffee">
+
+
+
+
+
+<meta name="twitter:card" content="summary">
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  WebFontConfig = {
+    
+    typekit: { id: 'hle1cwr' },
+    
+    
+  };
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+
+
+  <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta name="google-site-verification" content="kcSx34DvoOd1G0Vv4wxFQy917TUxlwSt9jhPgitx_ck">
+<meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/12804067/digital_wallets/dialog">
+<meta name="shopify-checkout-api-token" content="3f5478752a1a49b4547937a5f87d97a8">
+<meta id="amazon-payments-metadata" data-amazon-payments="true" data-amazon-payments-seller-id="A38HTM24L3XNPG" data-amazon-payments-callback-url="https://betterbuzzcoffee.com/12804067/amazon_payments/callback" data-amazon-payments-sandbox-mode="false" data-amazon-payments-client-id="amzn1.application-oa2-client.3eedb9bd96da431e9ba058123bf5f287" data-amazon-payments-region="US" data-amazon-payments-language="en-US" data-amazon-payments-widget-library-url="https://static-na.payments-amazon.com/OffAmazonPayments/us/js/Widgets.js">
+<script async="async" src="/checkouts/internal/preloads.js?locale=en-US"></script><script id="apple-pay-shop-capabilities" type="application/json">{"shopId":12804067,"countryCode":"US","currencyCode":"USD","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/12804067","merchantName":"Better Buzz Coffee","requiredBillingContactFields":["postalAddress","email","phone"],"requiredShippingContactFields":["postalAddress","email","phone"],"shippingType":"shipping","supportedNetworks":["visa","masterCard","amex","discover","elo","jcb"],"total":{"type":"pending","label":"Better Buzz Coffee","amount":"1.00"},"shopifyPaymentsEnabled":true,"supportsSubscriptions":true}</script>
+<script id="shopify-features" type="application/json">{"accessToken":"3f5478752a1a49b4547937a5f87d97a8","betas":["rich-media-storefront-analytics"],"domain":"betterbuzzcoffee.com","predictiveSearch":true,"shopId":12804067,"smart_payment_buttons_url":"https:\/\/betterbuzzcoffee.com\/cdn\/shopifycloud\/payment-sheet\/assets\/latest\/spb.en.js","dynamic_checkout_cart_url":"https:\/\/betterbuzzcoffee.com\/cdn\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.en.js","locale":"en","optimusEnabled":true,"optimusHidden":false,"betterDynamicCheckoutRecommendationVariant":"control","shopPromisePDPV3Enabled":false}</script>
+<script>var Shopify = Shopify || {};
+Shopify.shop = "better-buzz-coffee.myshopify.com";
+Shopify.locale = "en";
+Shopify.currency = {"active":"USD","rate":"1.0"};
+Shopify.country = "US";
+Shopify.theme = {"name":"Blockshop - Production | Bold | Sept.12.22","id":135330988265,"theme_store_id":null,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};
+Shopify.cdnHost = "betterbuzzcoffee.com/cdn";
+Shopify.routes = Shopify.routes || {};
+Shopify.routes.root = "/";</script>
+<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
+<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
+<script>window.ShopifyPay = window.ShopifyPay || {};
+window.ShopifyPay.apiHost = "shop.app\/pay";</script>
+<script>
+  window.Shopify = window.Shopify || {};
+  if (!window.Shopify.featureAssets) window.Shopify.featureAssets = {};
+  window.Shopify.featureAssets['shop-js'] = {"pay-button":["modules/client.pay-button_c03f67a8.en.esm.js","modules/chunk.common_67d8ee33.esm.js"],"init-shop-email-lookup-coordinator":["modules/client.init-shop-email-lookup-coordinator_bd9fff07.en.esm.js","modules/chunk.common_67d8ee33.esm.js"],"init-customer-accounts-sign-up":["modules/client.init-customer-accounts-sign-up_fc41c3fe.en.esm.js","modules/chunk.common_67d8ee33.esm.js"],"init-shop-for-new-customer-accounts":["modules/client.init-shop-for-new-customer-accounts_42c7c381.en.esm.js","modules/chunk.common_67d8ee33.esm.js"],"init-customer-accounts":["modules/client.init-customer-accounts_ff7efb14.en.esm.js","modules/chunk.common_67d8ee33.esm.js"],"shop-pay-payment-request":["modules/client.shop-pay-payment-request_4d87b3c0.en.esm.js","modules/chunk.common_67d8ee33.esm.js","modules/chunk.shop-pay_23e87eab.esm.js"],"login-button":["modules/client.login-button_ee73fa75.en.esm.js","modules/chunk.common_67d8ee33.esm.js"],"discount-app":["modules/client.discount-app_d2bca3a8.en.esm.js","modules/chunk.common_67d8ee33.esm.js"],"payment-terms":["modules/client.payment-terms_e3a02e75.en.esm.js","modules/chunk.common_67d8ee33.esm.js"]};
+</script>
+<script>(function() {
+  function asyncLoad() {
+    var urls = ["https:\/\/www.goldendev.win\/shopify\/add-to-cart\/js\/add-to-cart.js?shop=better-buzz-coffee.myshopify.com","\/\/shopify.privy.com\/widget.js?shop=better-buzz-coffee.myshopify.com","https:\/\/cdn.recovermycart.com\/scripts\/CartJS_v2.min.js?shop=better-buzz-coffee.myshopify.com\u0026shop=better-buzz-coffee.myshopify.com","https:\/\/cks3.amplifiedcdn.com\/ckjs.production.min.js?unique_id=better-buzz-coffee.myshopify.com\u0026shop=better-buzz-coffee.myshopify.com","https:\/\/loox.io\/widget\/Vmo1qLTezZ\/loox.1692143838324.js?shop=better-buzz-coffee.myshopify.com"];
+    for (var i = 0; i < urls.length; i++) {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = urls[i];
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  };
+  if(window.attachEvent) {
+    window.attachEvent('onload', asyncLoad);
+  } else {
+    window.addEventListener('load', asyncLoad, false);
+  }
+})();</script>
+<script id="__st">var __st={"a":12804067,"offset":-25200,"reqid":"14e76622-936e-4bcb-9667-a59a99e556aa","pageurl":"betterbuzzcoffee.com\/","u":"7f5d28da9ddb","p":"home"};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script>!function(o){o.addEventListener("DOMContentLoaded",function(){window.Shopify=window.Shopify||{},window.Shopify.recaptchaV3=window.Shopify.recaptchaV3||{siteKey:"6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9"};var t=['form[action*="/contact"] input[name="form_type"][value="contact"]','form[action*="/comments"] input[name="form_type"][value="new_comment"]','form[action*="/account"] input[name="form_type"][value="customer_login"]','form[action*="/account"] input[name="form_type"][value="recover_customer_password"]','form[action*="/account"] input[name="form_type"][value="create_customer"]','form[action*="/contact"] input[name="form_type"][value="customer"]'].join(",");function n(e){e=e.target;null==e||null!=(e=function e(t,n){if(null==t.parentElement)return null;if("FORM"!=t.parentElement.tagName)return e(t.parentElement,n);for(var o=t.parentElement.action,r=0;r<n.length;r++)if(-1!==o.indexOf(n[r]))return t.parentElement;return null}(e,["/contact","/comments","/account"]))&&null!=e.querySelector(t)&&((e=o.createElement("script")).setAttribute("src","https://cdn.shopify.com/shopifycloud/storefront-recaptcha-v3/v0.6/index.js"),o.body.appendChild(e),o.removeEventListener("focus",n,!0),o.removeEventListener("change",n,!0),o.removeEventListener("click",n,!0))}o.addEventListener("click",n,!0),o.addEventListener("change",n,!0),o.addEventListener("focus",n,!0)})}(document);</script>
+<script integrity="sha256-h4dvokWvGcvRSqiG7VnGqoonxF0k3NeoHPLSMjUGIz4=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//betterbuzzcoffee.com/cdn/shopifycloud/shopify/assets/storefront/load_feature-87876fa245af19cbd14aa886ed59c6aa8a27c45d24dcd7a81cf2d2323506233e.js" crossorigin="anonymous"></script>
+<script crossorigin="anonymous" defer="defer" src="//betterbuzzcoffee.com/cdn/shopifycloud/shopify/assets/shopify_pay/storefront-a2d444786d996da5634fbbaeeffe6104ee672440dfa6cdcaebfb27dceaaf9c0f.js?v=20220906"></script>
+<script integrity="sha256-HAs5a9TQVLlKuuHrahvWuke+s1UlxXohfHeoYv8G2D8=" data-source-attribution="shopify.dynamic-checkout" defer="defer" src="//betterbuzzcoffee.com/cdn/shopifycloud/shopify/assets/storefront/features-1c0b396bd4d054b94abae1eb6a1bd6ba47beb35525c57a217c77a862ff06d83f.js" crossorigin="anonymous"></script>
+
+
+<style id="shopify-dynamic-checkout-cart">@media screen and (min-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 180px;
+  }
+}
+</style><script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+
+  <script>window.BOLD = window.BOLD || {};
+    window.BOLD.common = window.BOLD.common || {};
+    window.BOLD.common.Shopify = window.BOLD.common.Shopify || {};
+
+    window.BOLD.common.Shopify.shop = {
+        domain: 'betterbuzzcoffee.com',
+        permanent_domain: 'better-buzz-coffee.myshopify.com',
+        url: 'https://betterbuzzcoffee.com',
+        secure_url: 'https://betterbuzzcoffee.com',
+        money_format: "${{amount}}",
+        currency: "USD"
+    };
+
+    window.BOLD.common.Shopify.cart = {"note":null,"attributes":{},"original_total_price":0,"total_price":0,"total_discount":0,"total_weight":0.0,"item_count":0,"items":[],"requires_shipping":false,"currency":"USD","items_subtotal_price":0,"cart_level_discount_applications":[],"checkout_charge_amount":0};
+    window.BOLD.common.template = 'index';window.BOLD.common.Shopify.formatMoney = function(money, format) {
+        function n(t, e) {
+            return "undefined" == typeof t ? e : t
+        }
+        function r(t, e, r, i) {
+            if (e = n(e, 2),
+            r = n(r, ","),
+            i = n(i, "."),
+            isNaN(t) || null == t)
+                return 0;
+            t = (t / 100).toFixed(e);
+            var o = t.split(".")
+              , a = o[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1" + r)
+              , s = o[1] ? i + o[1] : "";
+            return a + s
+        }
+        "string" == typeof money && (money = money.replace(".", ""));
+        var i = ""
+          , o = /\{\{\s*(\w+)\s*\}\}/
+          , a = format || window.BOLD.common.Shopify.shop.money_format || window.Shopify.money_format || "$ {{ amount }}";
+        switch (a.match(o)[1]) {
+            case "amount":
+                i = r(money, 2);
+                break;
+            case "amount_no_decimals":
+                i = r(money, 0);
+                break;
+            case "amount_with_comma_separator":
+                i = r(money, 2, ".", ",");
+                break;
+            case "amount_no_decimals_with_comma_separator":
+                i = r(money, 0, ".", ",");
+                break;
+            case "amount_with_space_separator":
+                i = r(money, 2, ".", " ");
+                break;
+            case "amount_no_decimals_with_space_separator":
+                i = r(money, 0, ".", " ");
+                break;
+        }
+        return a.replace(o, i);
+    };
+
+    window.BOLD.common.Shopify.saveProduct = function (handle, product) {
+        if (typeof handle === 'string' && typeof window.BOLD.common.Shopify.products[handle] === 'undefined') {
+            if (typeof product === 'number') {
+                window.BOLD.common.Shopify.handles[product] = handle;
+                product = { id: product };
+            }
+            window.BOLD.common.Shopify.products[handle] = product;
+        }
+    };
+
+	window.BOLD.common.Shopify.saveVariant = function (variant_id, variant) {
+		if (typeof variant_id === 'number' && typeof window.BOLD.common.Shopify.variants[variant_id] === 'undefined') {
+			window.BOLD.common.Shopify.variants[variant_id] = variant;
+		}
+	};window.BOLD.common.Shopify.products = window.BOLD.common.Shopify.products || {};
+    window.BOLD.common.Shopify.variants = window.BOLD.common.Shopify.variants || {};
+    window.BOLD.common.Shopify.handles = window.BOLD.common.Shopify.handles || {};window.BOLD.common.Shopify.saveProduct(null, null);window.BOLD.common.Shopify.saveProduct("unisex-breast-cancer-tee", 8194845999337);window.BOLD.common.Shopify.saveVariant(45713995923689, {product_id: 8194845999337, price: 2299, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(45713995956457, {product_id: 8194845999337, price: 2299, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(45713995989225, {product_id: 8194845999337, price: 2299, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("breast-cancer-awareness-mug", 8194847408361);window.BOLD.common.Shopify.saveVariant(45662152917225, {product_id: 8194847408361, price: 1699, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("camping-mug-1", 8158766989545);window.BOLD.common.Shopify.saveVariant(45204558020841, {product_id: 8158766989545, price: 1499, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("lifes-better-buzzed-tote-bag", 8076366905577);window.BOLD.common.Shopify.saveVariant(44491053924585, {product_id: 8076366905577, price: 2200, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("lbb-hoodie-black", 7784264433897);window.BOLD.common.Shopify.saveVariant(43349263450345, {product_id: 7784264433897, price: 4099, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43349263483113, {product_id: 7784264433897, price: 4099, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43349263515881, {product_id: 7784264433897, price: 4099, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43349263548649, {product_id: 7784264433897, price: 4099, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43750769393897, {product_id: 7784264433897, price: 4099, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("best-drink-ever-home-barista-kit", 7709805117673);window.BOLD.common.Shopify.saveVariant(43088437182697, {product_id: 7709805117673, price: 2699, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("best-subscription-ever", 9105719690);window.BOLD.common.Shopify.saveVariant(30809798986, {product_id: 9105719690, price: 4077, group_id: '12496'});window.BOLD.common.Shopify.saveProduct("rwanda", 8158801723625);window.BOLD.common.Shopify.saveVariant(45204858208489, {product_id: 8158801723625, price: 1949, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("glass-can", 4589818904672);window.BOLD.common.Shopify.saveVariant(32125135388768, {product_id: 4589818904672, price: 2099, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("i-like-you-better-when-im-buzzed", 8047325937897);window.BOLD.common.Shopify.saveVariant(44352842170601, {product_id: 8047325937897, price: 2000, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("lbb-tie-dye-hoodie-sunset-swirl", 7817665085673);window.BOLD.common.Shopify.saveVariant(43468324045033, {product_id: 7817665085673, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43468320145641, {product_id: 7817665085673, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43468320178409, {product_id: 7817665085673, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43468320211177, {product_id: 7817665085673, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43468320243945, {product_id: 7817665085673, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43750768804073, {product_id: 7817665085673, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("lbb-tie-dye-hoodie-dusty-pink", 7817667739881);window.BOLD.common.Shopify.saveVariant(43468327813353, {product_id: 7817667739881, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43468327682281, {product_id: 7817667739881, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43468327715049, {product_id: 7817667739881, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43468327747817, {product_id: 7817667739881, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43468327780585, {product_id: 7817667739881, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(44487807467753, {product_id: 7817667739881, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("black-tie-dye-hoodie", 7784232419561);window.BOLD.common.Shopify.saveVariant(43349199257833, {product_id: 7784232419561, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43349199290601, {product_id: 7784232419561, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43349199323369, {product_id: 7784232419561, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43349199356137, {product_id: 7784232419561, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43750766051561, {product_id: 7784232419561, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("14oz-handled-mug-1", 6471024583);window.BOLD.common.Shopify.saveVariant(20643446855, {product_id: 6471024583, price: 1499, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("klean-kanteen", 10369743946);window.BOLD.common.Shopify.saveVariant(40025979914, {product_id: 10369743946, price: 3095, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("vanilla-buzz-shots", 7319454711971);window.BOLD.common.Shopify.saveVariant(41628794650787, {product_id: 7319454711971, price: 2399, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("vanilla-powder", 6471058247);window.BOLD.common.Shopify.saveVariant(20643640007, {product_id: 6471058247, price: 1699, group_id: '12927'});window.BOLD.common.Shopify.saveProduct("black-magic-espresso", 6471038919);window.BOLD.common.Shopify.saveVariant(31978075914336, {product_id: 6471038919, price: 1549, group_id: '12928'});window.BOLD.common.Shopify.saveVariant(31978075947104, {product_id: 6471038919, price: 10479, group_id: '12928'});window.BOLD.common.Shopify.saveProduct("hangover-blend", 6471114951);window.BOLD.common.Shopify.saveVariant(45027798352105, {product_id: 6471114951, price: 1849, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(45027798384873, {product_id: 6471114951, price: 10479, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("killer-bee-coffee-pods", 7318407643299);window.BOLD.common.Shopify.saveVariant(41624361894051, {product_id: 7318407643299, price: 1649, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("speckled-ceramic-mug", 7819739824361);window.BOLD.common.Shopify.saveVariant(43475970359529, {product_id: 7819739824361, price: 1499, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("best-drink-ever-kit", 7318430613667);window.BOLD.common.Shopify.saveVariant(41624478548131, {product_id: 7318430613667, price: 2699, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("better-buzz-gift-card-25", 7399769415);window.BOLD.common.Shopify.saveVariant(23706994567, {product_id: 7399769415, price: 2500, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("better-buzz-coffee-roasters-tee-unisex-grey", 7784294252777);window.BOLD.common.Shopify.saveVariant(43349316698345, {product_id: 7784294252777, price: 2299, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43349316731113, {product_id: 7784294252777, price: 2299, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43349316763881, {product_id: 7784294252777, price: 2299, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43349316796649, {product_id: 7784294252777, price: 2299, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43750785351913, {product_id: 7784294252777, price: 2299, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("copy-of-lbb-unisex-tee", 7784281014505);window.BOLD.common.Shopify.saveVariant(43349292843241, {product_id: 7784281014505, price: 2299, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43349292876009, {product_id: 7784281014505, price: 2299, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43349292908777, {product_id: 7784281014505, price: 2299, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43349292941545, {product_id: 7784281014505, price: 2299, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43349296414953, {product_id: 7784281014505, price: 2299, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43349296447721, {product_id: 7784281014505, price: 2299, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("roasters-choice-subscription-single-origin", 9105768330);window.BOLD.common.Shopify.saveVariant(30810418954, {product_id: 9105768330, price: 3150, group_id: '12500'});window.BOLD.common.Shopify.saveProduct("better-buzz-hexagon-socks", 5855326339235);window.BOLD.common.Shopify.saveVariant(42163067224297, {product_id: 5855326339235, price: 995, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(42163067257065, {product_id: 5855326339235, price: 995, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("costa-rica-coffee-pods", 7318406529187);window.BOLD.common.Shopify.saveVariant(41624356880547, {product_id: 7318406529187, price: 1549, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("buzz-life-blend-coffee-pods", 7318419636387);window.BOLD.common.Shopify.saveVariant(41624424415395, {product_id: 7318419636387, price: 1549, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("best-drink-ever-coffee-pod-vanilla-kit-subscription", 7716498833641);window.BOLD.common.Shopify.saveVariant(43116063326441, {product_id: 7716498833641, price: 4588, group_id: '175356'});window.BOLD.common.Shopify.saveProduct("lbb-camo-pull-over-hoodie", 7900221243625);window.BOLD.common.Shopify.saveVariant(43710709760233, {product_id: 7900221243625, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43710709793001, {product_id: 7900221243625, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43710709858537, {product_id: 7900221243625, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43710709891305, {product_id: 7900221243625, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(43750749864169, {product_id: 7900221243625, price: 4499, group_id: 'null'});window.BOLD.common.Shopify.saveProduct("unisex-bb-logo-zip-up-hoodie-black", 8075520442601);window.BOLD.common.Shopify.saveVariant(44487793672425, {product_id: 8075520442601, price: 4099, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(44487793705193, {product_id: 8075520442601, price: 4099, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(44487793737961, {product_id: 8075520442601, price: 4099, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(44487793770729, {product_id: 8075520442601, price: 4099, group_id: 'null'});window.BOLD.common.Shopify.saveVariant(44487793803497, {product_id: 8075520442601, price: 4099, group_id: 'null'});window.BOLD.common.Shopify.metafields = window.BOLD.common.Shopify.metafields || {};window.BOLD.common.Shopify.metafields["bold_rp"] = {"recurring_type":2};</script>
+
+<script src="https://bundles.boldapps.net/js/bundles.js" type="text/javascript"></script>
+<link href="//betterbuzzcoffee.com/cdn/shop/t/44/assets/bold-bundles.css?v=103049324454107652061689036355" rel="stylesheet" type="text/css" media="all" />
+<script src="https://ro.boldapps.net/v2_ui/js/ro.js" type="text/javascript"></script>
+
+<script>window.BOLD = window.BOLD || {};
+    window.BOLD.common = window.BOLD.common || {};
+    window.BOLD.common.Shopify = window.BOLD.common.Shopify || {};
+
+    window.BOLD.common.Shopify.shop = {
+        domain: 'betterbuzzcoffee.com',
+        permanent_domain: 'better-buzz-coffee.myshopify.com',
+        url: 'https://betterbuzzcoffee.com',
+        secure_url: 'https://betterbuzzcoffee.com',
+        money_format: "${{amount}}",
+        currency: "USD"
+    };
+
+    window.BOLD.common.Shopify.cart = {"note":null,"attributes":{},"original_total_price":0,"total_price":0,"total_discount":0,"total_weight":0.0,"item_count":0,"items":[],"requires_shipping":false,"currency":"USD","items_subtotal_price":0,"cart_level_discount_applications":[],"checkout_charge_amount":0};
+    window.BOLD.common.template = 'index';window.BOLD.common.Shopify.formatMoney = function(money, format) {
+        function n(t, e) {
+            return "undefined" == typeof t ? e : t
+        }
+        function r(t, e, r, i) {
+            if (e = n(e, 2),
+            r = n(r, ","),
+            i = n(i, "."),
+            isNaN(t) || null == t)
+                return 0;
+            t = (t / 100).toFixed(e);
+            var o = t.split(".")
+              , a = o[0].replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1" + r)
+              , s = o[1] ? i + o[1] : "";
+            return a + s
+        }
+        "string" == typeof money && (money = money.replace(".", ""));
+        var i = ""
+          , o = /\{\{\s*(\w+)\s*\}\}/
+          , a = format || window.BOLD.common.Shopify.shop.money_format || window.Shopify.money_format || "$ {{ amount }}";
+        switch (a.match(o)[1]) {
+            case "amount":
+                i = r(money, 2);
+                break;
+            case "amount_no_decimals":
+                i = r(money, 0);
+                break;
+            case "amount_with_comma_separator":
+                i = r(money, 2, ".", ",");
+                break;
+            case "amount_no_decimals_with_comma_separator":
+                i = r(money, 0, ".", ",");
+                break;
+            case "amount_with_space_separator":
+                i = r(money, 2, ".", " ");
+                break;
+            case "amount_no_decimals_with_space_separator":
+                i = r(money, 0, ".", " ");
+                break;
+        }
+        return a.replace(o, i);
+    };
+
+    window.BOLD.common.Shopify.saveProduct = function (handle, product) {
+        if (typeof handle === 'string' && typeof window.BOLD.common.Shopify.products[handle] === 'undefined') {
+            if (typeof product === 'number') {
+                window.BOLD.common.Shopify.handles[product] = handle;
+                product = { id: product };
+            }
+            window.BOLD.common.Shopify.products[handle] = product;
+        }
+    };
+
+	window.BOLD.common.Shopify.saveVariant = function (variant_id, variant) {
+		if (typeof variant_id === 'number' && typeof window.BOLD.common.Shopify.variants[variant_id] === 'undefined') {
+			window.BOLD.common.Shopify.variants[variant_id] = variant;
+		}
+	};window.BOLD.common.Shopify.products = window.BOLD.common.Shopify.products || {};
+    window.BOLD.common.Shopify.variants = window.BOLD.common.Shopify.variants || {};
+    window.BOLD.common.Shopify.handles = window.BOLD.common.Shopify.handles || {};window.BOLD.common.Shopify.saveProduct(null, null);window.BOLD.common.Shopify.metafields = window.BOLD.common.Shopify.metafields || {};window.BOLD.common.Shopify.metafields["bold_rp"] = {"recurring_type":2};</script>
+
+<script src="https://bundles.boldapps.net/js/bundles.js" type="text/javascript"></script>
+<link href="//betterbuzzcoffee.com/cdn/shop/t/44/assets/bold-bundles.css?v=103049324454107652061689036355" rel="stylesheet" type="text/css" media="all" />
+<script src="https://ro.boldapps.net/v2_ui/js/ro.js" type="text/javascript"></script>
+<script>
+
+  var BOLD = BOLD || {};
+  BOLD.recurring_orders = BOLD.recurring_orders || {};
+  if(typeof BOLD.recurring_orders.setSettings !== 'undefined') {
+      BOLD.recurring_orders.setSettings({
+        loadingEnabled: true
+      },true);
+   } else {
+     BOLD.recurring_orders.settings = {
+       loadingEnabled: true
+     };
+   }
+
+  BOLD.recurring_orders.modes = {
+    current_mode:2,
+    recurring_cart:0,
+    single_product:1,
+    mixed_cart:2
+  };
+
+  BOLD.customer = BOLD.customer || {};
+  BOLD.customer.id = null || '';
+  BOLD.customer.email = null || '';
+  BOLD.customer.address1 = null || '';
+  BOLD.customer.address2 = null || '';
+  BOLD.customer.city = null || '';
+  BOLD.customer.company = null || '';
+  BOLD.customer.country = null || '';
+  BOLD.customer.first_name = null || '';
+  BOLD.customer.last_name = null || '';
+  BOLD.customer.phone = null || '';
+  BOLD.customer.province = null || '';
+  BOLD.customer.zip = null || '';
+  BOLD.customer.tags = null || '';
+
+
+  
+  
+  window.mixed_cart = null;
+</script>
+<script>BOLD.recurring_orders.settings.loadAdditionalBuyButtonSelector = '.shopify-payment-button'</script>
+
+  <link href="//betterbuzzcoffee.com/cdn/shop/t/44/assets/style.css?v=51139740902823301611697502484" rel="stylesheet" type="text/css" media="all" />
+  <style>
+
+/* Add Your Custom Styles Here */
+
+.main-header h1.title img {max-height: 150px;}
+  
+.main-header .bottom-row {
+    padding: 24px 0 24px 0;
+    border-top: 1px solid #aaa;
+}
+
+.main-header .main-menu .widescreen {
+    font-size: 1.6em;
+    font-weight: normal;
+}
+  
+  .main-header .mobile-menu .nav-item a {
+    padding: 5px 15px;
+    font-size: 1.6em;
+    font-weight: normal;
+    text-align: center;
+}
+  
+  .main-header .mobile-menu .sub-nav {padding-left: 0px;}
+  
+  .main-header .mobile-menu .glyph.plus, .main-header .mobile-menu .glyph.minus {display: none!important;}
+  
+    .wholesale-links {background: #1f1f1f;width: 100%; text-align: center; padding: 5px 40px 5px 40px}
+  .wholesale-links a {
+    font-family: "bebas-neue", sans-serif; 
+    padding: 0 10px; 
+    font-size: 18px; 
+    color: #fff;
+    font-weight: 300;
+  }
+  .hero-image {margin: 40px 0px;}
+  .hero-image  img {width: 100%}
+  .rte-content {font-size: 14px; margin-top: 40px}
+  .rte-content a {text-decoration: underline}
+  .main-content {padding-top: 0px;}
+  .similar-products {padding: 0 40px}
+  
+  .free-shipping-banner {padding: 6px; text-align: center; width: 100%; background-color: #1f1f1f }
+.banner-text { font-family: 'bebas-neue', sans-serif; font-size: 16px; color: #fff; text-transform: uppercase; letter-spacing: 1px}
+  .instagram-widget h3 {display: none}
+  .template-index .instagram-widget .items.wide {max-width: inherit; width: 100%}
+  .template-index .instagram-widget .items .item {
+  	width: calc(0.2 * 100%);
+    max-width: inherit;
+    margin: 0;
+  }
+  .template-index .instagram-widget .items {margin-top: 0; max-height: inherit;}
+
+  .template-index .instagram-widget .items .item img {width: 100%}
+  .template-index .widgets .social-feeds {margin-bottom: -6px;}
+  
+  @media (max-width: 768px) {
+    .template-index .instagram-widget .items .item {width: calc(0.5 * 100%);}
+  }
+</style>
+
+  <!--[if lt IE 8]>
+    <script src="//betterbuzzcoffee.com/cdn/shop/t/44/assets/json2.js?v=154133857350868653501663012789" type="text/javascript"></script>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+  <script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+  <script src="//betterbuzzcoffee.com/cdn/shop/t/44/assets/dd_roundies.js?v=75117064764312664521663012789" type="text/javascript"></script>
+  <script>
+  DD_roundies.addRule('.circle', '45px');
+  </script>
+  <![endif]-->
+
+  <script src="//betterbuzzcoffee.com/cdn/shop/t/44/assets/custom.modernizr.js?v=44331738608728928201663012789" type="text/javascript"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="//betterbuzzcoffee.com/cdn/shopifycloud/shopify/assets/themes_support/api.jquery-b0af070cfe3f5cf7c92f9e2a5da2665ee07ed2aad63bb408f8d6672f894a5996.js" type="text/javascript"></script>
+  <script src="//betterbuzzcoffee.com/cdn/shopifycloud/shopify/assets/themes_support/option_selection-86cdd286ddf3be7e25d68b9fc5965d7798a3ff6228ff79af67b3f4e41d6a34be.js" type="text/javascript"></script>
+
+  
+
+  <script>
+    var twitterID = '',
+    general_external_links_enabled = true,
+    general_scroll_to_active_item = true,
+    shop_url = 'https://betterbuzzcoffee.com',
+    shop_money_format = '${{amount}}',
+    home_slider_auto_enabled = true,
+    home_slider_rotate_frequency = 7000,
+    home_widget_twitter_enabled = false,
+    home_widget_blog_enabled = false,
+    home_widget_instagram_access_token = '54442866.c76948d.44ea8320fa7e487a83a1855790e094cc',
+    product_zoom_enabled = true,
+    product_modal_enabled = true,
+    currency_switcher_enabled = false,
+    theme = {};
+  </script>
+
+  
+
+  <script src="//betterbuzzcoffee.com/cdn/shop/t/44/assets/plugins.js?v=26013873585010736011663012789" type="text/javascript"></script>
+  <script src="//betterbuzzcoffee.com/cdn/shop/t/44/assets/shop.js?v=55835117227786749081667248730" type="text/javascript"></script>
+
+
+<!-- Hits Analytics tracking code -->
+
+  
+
+<!-- end of Hits Analytics code -->
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<!-- "snippets/pagefly-header.liquid" was not rendered, the associated app was uninstalled -->
+ 
+
+
+<!-- BeginConsistentCartAddon -->  <script>    Shopify.customer_logged_in = false ;  Shopify.customer_email = "" ;  Shopify.log_uuids = true;    </script>  <!-- EndConsistentCartAddon -->
+
+	<script>var loox_global_hash = '1698686662967';</script><style>.loox-reviews-default { max-width: 1200px; margin: 0 auto; }.loox-rating .loox-icon { color:#EBBF20; }</style><svg xmlns="http://www.w3.org/2000/svg" style="display: none" id="loox-rating-icon-svg-store">
+	<defs />
+	<symbol id="looxicons-rating-icon-fill" viewBox="0 0 24 24" fill="currentcolor">
+		<path
+			d="M8.148.22a2.54 2.54 0 0 0-2.135.183C2.312 2.54.624 7.416 1.62 13.155c.956 5.461 3.669 9.224 7.447 10.322.308.086.618.114.93.07a2.27 2.27 0 0 0 1.196-.57c.648-.598.93-1.524.744-2.43-.444-2.157-.46-4.456-.466-6.675-.014-3.716-.034-7.55-1.642-11.94A2.847 2.847 0 0 0 8.16.231L8.148.22Zm14.233 10.56c-.89-5.069-3.56-8.872-7.153-10.161-.882-.313-1.81-.112-2.498.54-.759.732-1.046 1.882-.722 2.922 1.211 3.915 1.223 7.525 1.234 10.711.006 2.313.017 4.495.446 6.619.2.999.837 1.842 1.71 2.262a2.796 2.796 0 0 0 1.57.252c.29-.041.584-.13.848-.273 3.908-2.013 5.605-6.82 4.554-12.87l.011-.002Z"
+		/>
+	</symbol>
+	<symbol id="looxicons-rating-icon-line" viewBox="0 0 24 24" fill="currentcolor">
+		<path
+			d="M8.148.22a2.54 2.54 0 0 0-2.134.183C2.312 2.54.624 7.416 1.62 13.155c.956 5.461 3.67 9.224 7.448 10.322.307.086.618.114.93.07.44-.062.849-.261 1.195-.57.648-.598.93-1.523.745-2.43-.445-2.157-.462-4.456-.466-6.675-.015-3.716-.034-7.55-1.643-11.94A2.847 2.847 0 0 0 8.161.231L8.148.22Zm.986 13.65c.01 2.336.019 4.755.52 7.14a.378.378 0 0 1-.01.19c-2.801-.87-4.932-4.017-5.708-8.453-.81-4.667.462-8.718 3.247-10.325.023-.003.033-.016.068-.021a.192.192 0 0 1 .107.008.529.529 0 0 1 .279.303c1.472 4.008 1.487 7.642 1.507 11.145l-.01.013Zm13.248-3.09c-.89-5.068-3.562-8.871-7.154-10.16-.882-.313-1.81-.112-2.498.54-.758.732-1.045 1.882-.722 2.922 1.211 3.915 1.223 7.525 1.234 10.711.006 2.313.018 4.495.446 6.619.2.999.837 1.842 1.71 2.262a2.795 2.795 0 0 0 1.57.252c.29-.041.585-.13.848-.273 3.908-2.013 5.605-6.82 4.554-12.87l.012-.001Zm-5.626 10.79s-.154.08-.332-.012a.901.901 0 0 1-.442-.623c-.384-1.894-.393-3.97-.406-6.164-.022-3.35-.035-7.137-1.341-11.392-.07-.238.007-.45.112-.547.031-.028.043-.03.054-.031 0 0 .024-.004.037.006 2.748.995 4.91 4.197 5.638 8.368.867 4.99-.37 8.87-3.32 10.395Z"
+		/>
+	</symbol>
+	<defs>
+		<style>
+			.lx-icon-fill {
+				--lx-fill-width: calc(100% - var(--lx-rating-percent, 0%));
+				clip-path: inset(0 var(--lx-fill-width, 0) 0 0);
+			}
+			.lx-icon-line {
+				clip-path: inset(0 0 0 var(--lx-rating-percent, 0%));
+			}
+			[data-lx-fill='empty'] {
+				--lx-rating-percent: 0%;
+			}
+			[data-lx-fill='half'] {
+				--lx-rating-percent: 50%;
+			}
+			[data-lx-fill='full'] {
+				--lx-rating-percent: 100%;
+			}
+		</style>
+
+		<g id="looxicons-rating-icon">
+			<use href="#looxicons-rating-icon-line" class="lx-icon-line"></use>
+			<use href="#looxicons-rating-icon-fill" class="lx-icon-fill"></use>
+		</g>
+	</defs>
+</svg>
+
+<!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <script async src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=VvSJ5h"></script>
+  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
+
+  
+
+
+
+<!-- END app app block --><!-- BEGIN app block: shopify://apps/seo-manager/blocks/seomanager/c54c366f-d4bb-4d52-8d2f-dd61ce8e7e12 --><!-- BEGIN app snippet: SEOManager -->
+<meta name='seomanager' content='3.19.0' /><script>
+
+  function sm_htmldecode(str) {
+    var txt = document.createElement('textarea');
+    txt.innerHTML = str;
+    return txt.value;
+  }
+
+  var venntov_title = sm_htmldecode("Better Buzz Coffee");
+  var venntov_description = sm_htmldecode("Better Buzz Coffee Roasters | San Diego, CA based Small Batch Coffee Roasters. Roasting organic &amp; specialty coffees with crafted coffee blends.");
+
+  document.title = venntov_title;
+
+  if (document.querySelector('meta[name="description"]') == null) {
+    var venntov_desc = document.createElement('meta');
+    venntov_desc.name = "description";
+    venntov_desc.content = venntov_description;
+    var venntov_head = document.head;
+    venntov_head.appendChild(venntov_desc);
+  } else {
+    document.querySelector('meta[name="description"]').setAttribute("content", venntov_description);
+  }
+</script><script>
+  var venntov_robotVals = "index, follow";
+  if (venntov_robotVals !== "") {
+    document.querySelectorAll("[name='robots']").forEach(e => e.remove());
+    var venntov_robotMeta = document.createElement('meta');
+    venntov_robotMeta.name = "robots";
+    venntov_robotMeta.content = venntov_robotVals;
+    var venntov_head = document.head;
+    venntov_head.appendChild(venntov_robotMeta);
+  }
+</script><script>
+  var venntov_googleVals = "";
+  if (venntov_googleVals !== "") {
+    document.querySelectorAll("[name='google']").forEach(e => e.remove());
+    var venntov_googleMeta = document.createElement('meta');
+    venntov_googleMeta.name = "google";
+    venntov_googleMeta.content = venntov_googleVals;
+    var venntov_head = document.head;
+    venntov_head.appendChild(venntov_googleMeta);
+  }
+</script><meta name="google-site-verification" content="foMBB6fj8aOEc28N4yXpwaXC5VvG_5m2w1fmR5ZRqm4" /><!-- JSON-LD support --><script type="application/ld+json">
+          {
+          "@context": "http://schema.org",
+                                        				"@type": "Organization",
+                                        				"name": "Better Buzz Coffee Roasters",
+          "url": "https://betterbuzzcoffee.com","logo": "https://customers.seomanager.com/knowledgegraph/logo/better-buzz-coffee_myshopify_com_logo.png"
+            ,"image": "https://customers.seomanager.com/knowledgegraph/logo/better-buzz-coffee_myshopify_com_logo.png","contactPoint": [],"sameAs": ["https://www.facebook.com/betterbuzzcoffee/", "https://twitter.com/Better_Buzz", "https://www.instagram.com/betterbuzz/"]}
+        </script><script type="application/ld+json">
+          {
+          "@context": "https://schema.org",
+                                        				"@type": "WebSite",
+                                        				"name": "Better Buzz Coffee Roasters",
+          "url": "betterbuzzcoffee.com",
+          "potentialAction": {
+                                        					"@type": "SearchAction",
+                                        					"target": {
+                                        							"@type": "EntryPoint",
+                                        							"urlTemplate": "https://betterbuzzcoffee.com/search?q={search_term_string}"
+          },
+                                        						"query-input": "required name=search_term_string"
+                                        				}
+                                        			}
+        </script><!-- END app snippet -->
+
+
+<!-- END app app block --><link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 12804067,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "index"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
+<script id="web-pixels-manager-setup">(function e(e,n,a,t,o,r,i){var s=null!==e,l=("function"==typeof BigInt&&BigInt.toString().indexOf("[native code]")?"modern":"legacy").substring(0,1),c=t.substring(0,1);if(s){window.Shopify=window.Shopify||{};var d=window.Shopify;d.analytics=d.analytics||{};var u=d.analytics;u.replayQueue=[],u.publish=function(e,n,a){u.replayQueue.push([e,n,a])};try{self.performance.mark("wpm:start")}catch(e){}}var p,f,y,h,v,m,w,g,b,_=[a,"/wpm","/",c,r,l,".js"].join("");f=(p={src:_,async:!0,onload:function(){if(e){var a=window.webPixelsManager.init(e);null==n||n(a);var t=window.Shopify.analytics;t.replayQueue.forEach((function(e){var n=e[0],t=e[1],o=e[2];a.publishCustomEvent(n,t,o)})),t.replayQueue=[],t.publish=a.publishCustomEvent,t.visitor=a.visitor}},onerror:function(){var n=(null==e?void 0:e.storefrontBaseUrl)?e.storefrontBaseUrl.replace(/\/$/,""):self.location.origin,a="".concat(n,"/.well-known/shopify/monorail/unstable/produce_batch"),t=JSON.stringify({metadata:{event_sent_at_ms:(new Date).getTime()},events:[{schema_id:"web_pixels_manager_load/2.0",payload:{version:o||"latest",page_url:self.location.href,status:"failed",error_msg:"".concat(_," has failed to load")},metadata:{event_created_at_ms:(new Date).getTime()}}]});try{if(self.navigator.sendBeacon.bind(self.navigator)(a,t))return!0}catch(e){}var r=new XMLHttpRequest;try{return r.open("POST",a,!0),r.setRequestHeader("Content-Type","text/plain"),r.send(t),!0}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging a load error.")}return!1}}).src,y=p.async,h=void 0===y||y,v=p.onload,m=p.onerror,w=document.createElement("script"),g=document.head,b=document.body,w.async=h,w.src=f,v&&w.addEventListener("load",v),m&&w.addEventListener("error",m),g?g.appendChild(w):b?b.appendChild(w):console.error("Did not find a head or body element to append the script")})({shopId: 12804067,storefrontBaseUrl: "https://betterbuzzcoffee.com",cdnBaseUrl: "https://betterbuzzcoffee.com/cdn",surface: "storefront-renderer",enabledBetaFlags: ["web_pixels_async_pixel_refactor","web_pixels_visitor_api","web_pixels_manager_performance_improvement"],webPixelsConfigList: [{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0570","apiClientId":"shopify-pixel","type":"APP"},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0570","apiClientId":"shopify-pixel","type":"CUSTOM"}],initData: {"cart":null,"checkout":null,"customer":null,"productVariants":[]},},function pageEvents(webPixelsManagerAPI) {webPixelsManagerAPI.publish("page_viewed");},"https://betterbuzzcoffee.com/cdn","browser","0.0.399","3fd1a2bbwee012995p01c405e6ma9d306b2",["web_pixels_async_pixel_refactor","web_pixels_visitor_api","web_pixels_manager_performance_improvement"]);</script>  <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+window.ShopifyAnalytics.meta.currency = 'USD';
+var meta = {"page":{"pageType":"home"}};
+for (var attr in meta) {
+  window.ShopifyAnalytics.meta[attr] = meta[attr];
+}</script>
+<script>window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
+  
+};
+</script>
+<script class="analytics">(window.gaDevIds=window.gaDevIds||[]).push('BwiEti');
+
+
+(function () {
+    var customDocumentWrite = function(content) {
+      var jquery = null;
+
+      if (window.jQuery) {
+        jquery = window.jQuery;
+      } else if (window.Checkout && window.Checkout.$) {
+        jquery = window.Checkout.$;
+      }
+
+      if (jquery) {
+        jquery('body').append(content);
+      }
+    };
+
+    var hasLoggedConversion = function(token) {
+      if (token) {
+        return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+      }
+      return false;
+    }
+
+    var setCookieIfConversion = function(token) {
+      if (token) {
+        var twoMonthsFromNow = new Date(Date.now());
+        twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+        document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
+      }
+    }
+
+    var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+    if (trekkie.integrations) {
+      return;
+    }
+    trekkie.methods = [
+      'identify',
+      'page',
+      'ready',
+      'track',
+      'trackForm',
+      'trackLink'
+    ];
+    trekkie.factory = function(method) {
+      return function() {
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift(method);
+        trekkie.push(args);
+        return trekkie;
+      };
+    };
+    for (var i = 0; i < trekkie.methods.length; i++) {
+      var key = trekkie.methods[i];
+      trekkie[key] = trekkie.factory(key);
+    }
+    trekkie.load = function(config) {
+      trekkie.config = config || {};
+      trekkie.config.initialDocumentCookie = document.cookie;
+      var first = document.getElementsByTagName('script')[0];
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.onerror = function(e) {
+        var scriptFallback = document.createElement('script');
+        scriptFallback.type = 'text/javascript';
+        scriptFallback.onerror = function(error) {
+                var Monorail = {
+      produce: function produce(monorailDomain, schemaId, payload) {
+        var currentMs = new Date().getTime();
+        var event = {
+          schema_id: schemaId,
+          payload: payload,
+          metadata: {
+            event_created_at_ms: currentMs,
+            event_sent_at_ms: currentMs
+          }
+        };
+        return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
+      },
+      sendRequest: function sendRequest(endpointUrl, payload) {
+        // Try the sendBeacon API
+        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
+          var blobData = new window.Blob([payload], {
+            type: 'text/plain'
+          });
+
+          if (window.navigator.sendBeacon(endpointUrl, blobData)) {
+            return true;
+          } // sendBeacon was not successful
+
+        } // XHR beacon
+
+        var xhr = new XMLHttpRequest();
+
+        try {
+          xhr.open('POST', endpointUrl);
+          xhr.setRequestHeader('Content-Type', 'text/plain');
+          xhr.send(payload);
+        } catch (e) {
+          console.log(e);
+        }
+
+        return false;
+      },
+      isIos12: function isIos12() {
+        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
+      }
+    };
+    Monorail.produce('monorail-edge.shopifysvc.com',
+      'trekkie_storefront_load_errors/1.1',
+      {shop_id: 12804067,
+      theme_id: 135330988265,
+      app_name: "storefront",
+      context_url: window.location.href,
+      source_url: "//betterbuzzcoffee.com/cdn/s/trekkie.storefront.f33399a7b9d8c1007209860fbdd63bb24633ae9f.min.js"});
+
+        };
+        scriptFallback.async = true;
+        scriptFallback.src = '//betterbuzzcoffee.com/cdn/s/trekkie.storefront.f33399a7b9d8c1007209860fbdd63bb24633ae9f.min.js';
+        first.parentNode.insertBefore(scriptFallback, first);
+      };
+      script.async = true;
+      script.src = '//betterbuzzcoffee.com/cdn/s/trekkie.storefront.f33399a7b9d8c1007209860fbdd63bb24633ae9f.min.js';
+      first.parentNode.insertBefore(script, first);
+    };
+    trekkie.load(
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":12804067,"isMerchantRequest":null,"themeId":135330988265,"themeCityHash":"17518272151395971536","contentLanguage":"en","currency":"USD"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain"},"Google Analytics":{"trackingId":"UA-3535111-1","domain":"auto","siteSpeedSampleRate":"10","enhancedEcommerce":true,"doubleClick":true,"includeSearch":true},"Facebook Pixel":{"pixelIds":["338675420177842"],"agent":"plshopify1.2"},"Google Gtag Pixel":{"conversionId":"AW-871391647","eventLabels":[{"type":"search","action_label":"AW-871391647\/tx_YCNqy4JABEJ_DwZ8D"},{"type":"begin_checkout","action_label":"AW-871391647\/LSHhCNey4JABEJ_DwZ8D"},{"type":"view_item","action_label":["AW-871391647\/2XZOCNGy4JABEJ_DwZ8D","MC-WG9N84MHP1"]},{"type":"purchase","action_label":["AW-871391647\/et3HCM6y4JABEJ_DwZ8D","MC-WG9N84MHP1"]},{"type":"page_view","action_label":["AW-871391647\/3NPRCMuy4JABEJ_DwZ8D","MC-WG9N84MHP1"]},{"type":"add_payment_info","action_label":"AW-871391647\/D2YyCN2y4JABEJ_DwZ8D"},{"type":"add_to_cart","action_label":"AW-871391647\/ZPU3CNSy4JABEJ_DwZ8D"}],"targetCountry":"US"},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"facebookAppPixelId":"338675420177842","source":"trekkie-storefront-renderer"}}
+    );
+
+    var loaded = false;
+    trekkie.ready(function() {
+      if (loaded) return;
+      loaded = true;
+
+      window.ShopifyAnalytics.lib = window.trekkie;
+
+        ga('require', 'linker');
+      function addListener(element, type, callback) {
+        if (element.addEventListener) {
+          element.addEventListener(type, callback);
+        }
+        else if (element.attachEvent) {
+          element.attachEvent('on' + type, callback);
+        }
+      }
+      function decorate(event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement;
+        if (target && (target.getAttribute('action') || target.getAttribute('href'))) {
+          ga(function (tracker) {
+            var linkerParam = tracker.get('linkerParam');
+            document.cookie = '_shopify_ga=' + linkerParam + '; ' + 'path=/';
+          });
+        }
+      }
+      addListener(window, 'load', function(){
+        for (var i=0; i < document.forms.length; i++) {
+          var action = document.forms[i].getAttribute('action');
+          if(action && action.indexOf('/cart') >= 0) {
+            addListener(document.forms[i], 'submit', decorate);
+          }
+        }
+        for (var i=0; i < document.links.length; i++) {
+          var href = document.links[i].getAttribute('href');
+          if(href && href.indexOf('/checkout') >= 0) {
+            addListener(document.links[i], 'click', decorate);
+          }
+        }
+      });
+    
+
+      var originalDocumentWrite = document.write;
+      document.write = customDocumentWrite;
+      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+      document.write = originalDocumentWrite;
+
+      window.ShopifyAnalytics.lib.page(null,{"pageType":"home"});
+
+      var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+      var token = match? match[1]: undefined;
+      if (!hasLoggedConversion(token)) {
+        setCookieIfConversion(token);
+        
+      }
+    });
+
+
+        var eventsListenerScript = document.createElement('script');
+        eventsListenerScript.async = true;
+        eventsListenerScript.src = "//betterbuzzcoffee.com/cdn/shopifycloud/shopify/assets/shop_events_listener-a7c63dba65ccddc484f77541dc8ca437e60e1e9e297fe1c3faebf6523a0ede9b.js";
+        document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+
+})();</script>
+<script class="boomerang">
+(function () {
+  if (window.BOOMR && (window.BOOMR.version || window.BOOMR.snippetExecuted)) {
+    return;
+  }
+  window.BOOMR = window.BOOMR || {};
+  window.BOOMR.snippetStart = new Date().getTime();
+  window.BOOMR.snippetExecuted = true;
+  window.BOOMR.snippetVersion = 12;
+  window.BOOMR.application = "storefront-renderer";
+  window.BOOMR.themeName = "";
+  window.BOOMR.themeVersion = "";
+  window.BOOMR.shopId = 12804067;
+  window.BOOMR.themeId = 135330988265;
+  window.BOOMR.renderRegion = "gcp-europe-west1";
+  window.BOOMR.url =
+    "https://betterbuzzcoffee.com/cdn/shopifycloud/boomerang/shopify-boomerang-1.0.0.min.js";
+  var where = document.currentScript || document.getElementsByTagName("script")[0];
+  var parentNode = where.parentNode;
+  var promoted = false;
+  var LOADER_TIMEOUT = 3000;
+  function promote() {
+    if (promoted) {
+      return;
+    }
+    var script = document.createElement("script");
+    script.id = "boomr-scr-as";
+    script.src = window.BOOMR.url;
+    script.async = true;
+    parentNode.appendChild(script);
+    promoted = true;
+  }
+  function iframeLoader(wasFallback) {
+    promoted = true;
+    var dom, bootstrap, iframe, iframeStyle;
+    var doc = document;
+    var win = window;
+    window.BOOMR.snippetMethod = wasFallback ? "if" : "i";
+    bootstrap = function(parent, scriptId) {
+      var script = doc.createElement("script");
+      script.id = scriptId || "boomr-if-as";
+      script.src = window.BOOMR.url;
+      BOOMR_lstart = new Date().getTime();
+      parent = parent || doc.body;
+      parent.appendChild(script);
+    };
+    if (!window.addEventListener && window.attachEvent && navigator.userAgent.match(/MSIE [67]./)) {
+      window.BOOMR.snippetMethod = "s";
+      bootstrap(parentNode, "boomr-async");
+      return;
+    }
+    iframe = document.createElement("IFRAME");
+    iframe.src = "about:blank";
+    iframe.title = "";
+    iframe.role = "presentation";
+    iframe.loading = "eager";
+    iframeStyle = (iframe.frameElement || iframe).style;
+    iframeStyle.width = 0;
+    iframeStyle.height = 0;
+    iframeStyle.border = 0;
+    iframeStyle.display = "none";
+    parentNode.appendChild(iframe);
+    try {
+      win = iframe.contentWindow;
+      doc = win.document.open();
+    } catch (e) {
+      dom = document.domain;
+      iframe.src = "javascript:var d=document.open();d.domain='" + dom + "';void(0);";
+      win = iframe.contentWindow;
+      doc = win.document.open();
+    }
+    if (dom) {
+      doc._boomrl = function() {
+        this.domain = dom;
+        bootstrap();
+      };
+      doc.write("<body onload='document._boomrl();'>");
+    } else {
+      win._boomrl = function() {
+        bootstrap();
+      };
+      if (win.addEventListener) {
+        win.addEventListener("load", win._boomrl, false);
+      } else if (win.attachEvent) {
+        win.attachEvent("onload", win._boomrl);
+      }
+    }
+    doc.close();
+  }
+  var link = document.createElement("link");
+  if (link.relList &&
+    typeof link.relList.supports === "function" &&
+    link.relList.supports("preload") &&
+    ("as" in link)) {
+    window.BOOMR.snippetMethod = "p";
+    link.href = window.BOOMR.url;
+    link.rel = "preload";
+    link.as = "script";
+    link.addEventListener("load", promote);
+    link.addEventListener("error", function() {
+      iframeLoader(true);
+    });
+    setTimeout(function() {
+      if (!promoted) {
+        iframeLoader(true);
+      }
+    }, LOADER_TIMEOUT);
+    BOOMR_lstart = new Date().getTime();
+    parentNode.appendChild(link);
+  } else {
+    iframeLoader(false);
+  }
+  function boomerangSaveLoadTime(e) {
+    window.BOOMR_onload = (e && e.timeStamp) || new Date().getTime();
+  }
+  if (window.addEventListener) {
+    window.addEventListener("load", boomerangSaveLoadTime, false);
+  } else if (window.attachEvent) {
+    window.attachEvent("onload", boomerangSaveLoadTime);
+  }
+  if (document.addEventListener) {
+    document.addEventListener("onBoomerangLoaded", function(e) {
+      e.detail.BOOMR.init({
+        ResourceTiming: {
+          enabled: true,
+          trackedResourceTypes: ["script", "img", "css"]
+        },
+      });
+      e.detail.BOOMR.t_end = new Date().getTime();
+    });
+  } else if (document.attachEvent) {
+    document.attachEvent("onpropertychange", function(e) {
+      if (!e) e=event;
+      if (e.propertyName === "onBoomerangLoaded") {
+        e.detail.BOOMR.init({
+          ResourceTiming: {
+            enabled: true,
+            trackedResourceTypes: ["script", "img", "css"]
+          },
+        });
+        e.detail.BOOMR.t_end = new Date().getTime();
+      }
+    });
+  }
+})();</script>
+</head> 
+
+
+<body class="page-better-buzz-coffee 
+            
+            template-index
+            
+             
+            ">
+
+
+  
+  <header class="main-header">
+    <div class="bg"></div>
+    <div class="row top">
+      
+
+      <div class="columns logo-center">
+        <h1 class="title clearfix" role="banner">
+  
+    <a href="/" role="banner" title="Better Buzz Coffee">
+      <img src="//betterbuzzcoffee.com/cdn/shop/t/44/assets/logo.png?v=170971220339388031691663012789" alt="Better Buzz Coffee" />
+    </a>
+  
+</h1>
+      </div>
+
+      <div class="search-account columns">
+        <div class="menu">
+  
+
+  
+    <a class="searchbar-open" href="#">Search<span aria-hidden="true" class="glyph search"></span></a>
+  
+
+  
+    <a class="account-open" href="#">Account<span aria-hidden="true" class="glyph account"></span></a>
+  
+    
+</div>
+
+<div class="searchbar-container">
+  <form  action="/search" method="get" role="search">
+    
+    <input name="q" type="text" placeholder="Search store..." class="search-box hint text" />
+    
+    <button class="glyph search"></button>
+  </form>
+  <a href="#" aria-hidden="true" class="searchbar-close glyph cross"></a>
+</div>
+
+<div class="account-container">
+  
+    
+    
+    
+    
+
+    
+      <a href="/account/login" id="customer_login_link">Login</a> or <a href="/account/register" id="customer_register_link">Sign Up</a>
+    
+  
+  <a href="#" aria-hidden="true" class="account-close glyph cross"></a>
+</div>
+
+
+
+
+      </div>
+      
+    </div><!-- .row -->
+
+    <div class="bottom-row">
+      <div class="row">
+        <div class="columns menu-container text-center">
+          <div class="main-menu">
+  <nav role="navigation" class="widescreen clearfix">
+    <ul class="font-nav">
+      
+      
+<li class="nav-item">
+          <a class="nav-item-link" href="https://betterbuzzcoffee.olo.com/locations/CA">
+            Order Online
+          </a>
+
+          
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+
+          
+          
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+
+        
+        </li>
+      
+<li class="nav-item">
+          <a class="nav-item-link" href="/pages/locations">
+            Locations
+          </a>
+
+          
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+
+          
+          
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+
+        
+        </li>
+      
+<li class="nav-item">
+          <a class="nav-item-link" href="/pages/menu">
+            Menu
+          </a>
+
+          
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+
+          
+          
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+
+        
+        </li>
+      
+<li class="nav-item">
+          <a class="nav-item-link" href="/pages/better-buzz-rewards">
+            Rewards
+          </a>
+
+          
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+
+          
+          
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+
+        
+        </li>
+      
+<li class="nav-item">
+          <a class="nav-item-link" href="/pages/careers">
+            Careers
+          </a>
+
+          
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+
+          
+          
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+
+        
+        </li>
+      
+<li class="nav-item">
+          <a class="nav-item-link" href="#">
+            Shop Coffee
+          </a>
+
+          
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+
+          
+          
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+              <ul class="sub-nav catalog">
+                <li class="row">
+                  
+<div class="sub-nav-item columns">
+                      <a  href="/collections/whole-bean-coffee"><span>All</span></a>
+                      
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                    </div>
+                  
+<div class="sub-nav-item columns">
+                      <a  href="/collections/blends"><span>Blends</span></a>
+                      
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                    </div>
+                  
+<div class="sub-nav-item columns">
+                      <a  href="/collections/coffee-pods"><span>Coffee Pods</span></a>
+                      
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                    </div>
+                  
+<div class="sub-nav-item columns">
+                      <a  href="/collections/organic"><span>Organic</span></a>
+                      
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                    </div>
+                  
+<div class="sub-nav-item columns">
+                      <a  href="/collections/single-origin"><span>Single Origin</span></a>
+                      
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                    </div>
+                  
+                </li>
+              </ul>
+            
+          
+            
+            
+          
+            
+            
+          
+
+        
+        </li>
+      
+<li class="nav-item">
+          <a class="nav-item-link" href="/collections/powder">
+            Vanilla Powder
+          </a>
+
+          
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+
+          
+          
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+
+        
+        </li>
+      
+<li class="nav-item">
+          <a class="nav-item-link" href="/collections/subscriptions">
+            Subscriptions
+          </a>
+
+          
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+
+          
+          
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+
+        
+        </li>
+      
+<li class="nav-item">
+          <a class="nav-item-link" href="#">
+            Merch & Apparel
+          </a>
+
+          
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+
+          
+          
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+              <ul class="sub-nav catalog">
+                <li class="row">
+                  
+<div class="sub-nav-item columns">
+                      <a  href="/collections/home-brewing"><span>Home Brew</span></a>
+                      
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                    </div>
+                  
+<div class="sub-nav-item columns">
+                      <a  href="/collections/cups-mugs"><span>Drinkware</span></a>
+                      
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                    </div>
+                  
+<div class="sub-nav-item columns">
+                      <a  href="/collections/apparel"><span>Apparel</span></a>
+                      
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                    </div>
+                  
+                </li>
+              </ul>
+            
+          
+            
+            
+          
+
+        
+        </li>
+      
+<li class="nav-item">
+          <a class="nav-item-link" href="#">
+            Gifts
+          </a>
+
+          
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+            
+            
+            
+          
+
+          
+          
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+          
+            
+            
+              <ul class="sub-nav catalog">
+                <li class="row">
+                  
+<div class="sub-nav-item columns">
+                      <a  href="/collections/gifts-goods"><span>Gifts & Goods</span></a>
+                      
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                    </div>
+                  
+<div class="sub-nav-item columns">
+                      <a  href="/collections/gift-cards"><span>Gift Cards</span></a>
+                      
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                        
+                        
+                      
+                    </div>
+                  
+                </li>
+              </ul>
+            
+          
+
+        
+        </li>
+      
+    </ul>
+  </nav>
+
+</div>
+
+        </div>
+        
+        <div class="columns cart-container">
+          <div class="cart">
+ 	<div class="show-for-medium-up">
+	  <a class="cart-link" href="/cart">Cart <span class="number-wrapper hide">(<span class="number">0</span>)</span><span aria-hidden="true" class="glyph cart"></span></a>
+
+		<div class="recently-added">
+		  <table width="100%">
+			  <thead>
+			    <tr>
+			      <td colspan="3">Recently Added</td>
+			    </tr>
+			  </thead>
+			  
+			  <tbody>
+					
+
+			  </tbody>
+
+			  <tfoot>
+			    <tr>
+						<td class="items-count"><a href="/cart"><span class="number">0</span> Items</a></td>
+						<td colspan="2" class="text-right all-caps"><strong>Total <span class="total-price" style="margin-left:5px;">$0.00</span></strong></td>
+			    </tr>
+			  </tfoot>
+			  
+			</table>
+
+			<div class="row"> 
+			  <div class="checkout columns">
+			    <a class="button" href="/cart">Go to Checkout</a>
+			  </div><!-- #cart-meta -->
+			</div>
+
+			<div class="error">
+			  <p>The item you just added is unavailable. Please select another product or variant.</p>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="show-for-small hide-for-ie9-down">
+		<div class="recently-added-mask hide"></div>
+		<div class="recently-added mobile">
+			<a aria-hidden="true" class="close glyph cross"></a>
+			
+
+			<div class="row">
+				<div class="columns">
+					<p><strong class="all-caps">Recently Added</strong></p>
+					<p class="mobile-item"></p>
+					<p class="items-count"><a href="/cart"><span class="number">0</span> Items</a></p>
+					<p><strong class="all-caps">Total <span class="total-price" style="margin-left:5px;">$0.00</span></strong></p>
+				</div>
+			</div>
+
+			<div class="row">
+			  <div class="checkout columns">
+			    <a class="button" href="/cart">Go to Checkout</a>
+			  </div><!-- #cart-meta -->
+			</div>
+
+			<div class="error">
+			  <p>The item you just added is unavailable. Please select another product or variant.</p>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+        </div>
+
+        <div class="mobile-tools">
+          <a class="glyph menu" href=""></a>
+          
+          <a href="/search" class="glyph search"></a>
+          
+          
+          <a href="/account" class="glyph account"></a>
+          
+          <a href="/cart" class="glyph cart"></a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="main-menu-dropdown-panel">
+      <div class="row text-center">
+      
+      </div>
+    </div>
+
+    <div class="mobile-menu">
+      <nav role="navigation">
+  <ul class="font-nav">
+
+    
+    
+<li class="nav-item">
+        <a class="nav-item-link" href="https://betterbuzzcoffee.olo.com/locations/CA">
+          Order Online
+        </a>
+
+        
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+
+
+        
+        
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+
+
+      
+      </li>
+    
+<li class="nav-item">
+        <a class="nav-item-link" href="/pages/locations">
+          Locations
+        </a>
+
+        
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+
+
+        
+        
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+
+
+      
+      </li>
+    
+<li class="nav-item">
+        <a class="nav-item-link" href="/pages/menu">
+          Menu
+        </a>
+
+        
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+
+
+        
+        
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+
+
+      
+      </li>
+    
+<li class="nav-item">
+        <a class="nav-item-link" href="/pages/better-buzz-rewards">
+          Rewards
+        </a>
+
+        
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+
+
+        
+        
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+
+
+      
+      </li>
+    
+<li class="nav-item">
+        <a class="nav-item-link" href="/pages/careers">
+          Careers
+        </a>
+
+        
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+
+
+        
+        
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+
+
+      
+      </li>
+    
+<li class="nav-item">
+        <a class="nav-item-link" href="#">
+          Shop Coffee
+        </a>
+
+        
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+
+
+        
+        
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            <ul class="sub-nav catalog">
+              <li class="row">
+                
+<div class="sub-nav-item columns">
+                    <a  href="/collections/whole-bean-coffee"><span>All</span></a>
+                    
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                  </div>
+                
+<div class="sub-nav-item columns">
+                    <a  href="/collections/blends"><span>Blends</span></a>
+                    
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                  </div>
+                
+<div class="sub-nav-item columns">
+                    <a  href="/collections/coffee-pods"><span>Coffee Pods</span></a>
+                    
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                  </div>
+                
+<div class="sub-nav-item columns">
+                    <a  href="/collections/organic"><span>Organic</span></a>
+                    
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                  </div>
+                
+<div class="sub-nav-item columns">
+                    <a  href="/collections/single-origin"><span>Single Origin</span></a>
+                    
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                  </div>
+                
+              </li>
+            </ul>
+          
+        
+          
+          
+        
+          
+          
+        
+
+
+      
+      </li>
+    
+<li class="nav-item">
+        <a class="nav-item-link" href="/collections/powder">
+          Vanilla Powder
+        </a>
+
+        
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+
+
+        
+        
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+
+
+      
+      </li>
+    
+<li class="nav-item">
+        <a class="nav-item-link" href="/collections/subscriptions">
+          Subscriptions
+        </a>
+
+        
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+
+
+        
+        
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+
+
+      
+      </li>
+    
+<li class="nav-item">
+        <a class="nav-item-link" href="#">
+          Merch & Apparel
+        </a>
+
+        
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+
+
+        
+        
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            <ul class="sub-nav catalog">
+              <li class="row">
+                
+<div class="sub-nav-item columns">
+                    <a  href="/collections/home-brewing"><span>Home Brew</span></a>
+                    
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                  </div>
+                
+<div class="sub-nav-item columns">
+                    <a  href="/collections/cups-mugs"><span>Drinkware</span></a>
+                    
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                  </div>
+                
+<div class="sub-nav-item columns">
+                    <a  href="/collections/apparel"><span>Apparel</span></a>
+                    
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                  </div>
+                
+              </li>
+            </ul>
+          
+        
+          
+          
+        
+
+
+      
+      </li>
+    
+<li class="nav-item">
+        <a class="nav-item-link" href="#">
+          Gifts
+        </a>
+
+        
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+          
+          
+          
+        
+
+
+        
+        
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            <ul class="sub-nav catalog">
+              <li class="row">
+                
+<div class="sub-nav-item columns">
+                    <a  href="/collections/gifts-goods"><span>Gifts & Goods</span></a>
+                    
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                  </div>
+                
+<div class="sub-nav-item columns">
+                    <a  href="/collections/gift-cards"><span>Gift Cards</span></a>
+                    
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                  </div>
+                
+              </li>
+            </ul>
+          
+        
+
+
+      
+      </li>
+    
+
+  </ul>
+</nav>
+
+
+
+    </div>
+
+
+    <div class="row">
+      <div class="header-divider"></div>
+    </div>
+
+  </header>
+  
+  
+  		
+
+  
+  
+  
+
+  <main class="main-content">
+    
+      
+
+
+
+
+  
+
+    <section class="slider ">
+      <div class="row">
+        <div class="slides">
+
+          
+
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+
+            
+              
+
+              
+              
+
+              
+              
+
+              <div class="slide">
+
+                
+                <a href="https://betterbuzzcoffee.com/pages/mission-gorge-location">
+                
+
+                <img src="//betterbuzzcoffee.com/cdn/shop/t/44/assets/home-slider-slide-1.jpg?v=4593209055888930981698383067" alt="Shades of Pink" />
+
+                
+
+
+                
+
+                
+                </a>
+                
+              </div>
+            
+            
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+
+            
+              
+
+              
+              
+
+              
+              
+
+              <div class="slide">
+
+                
+                <a href="https://betterbuzzcoffee.com/collections/featured-products">
+                
+
+                <img src="//betterbuzzcoffee.com/cdn/shop/t/44/assets/home-slider-slide-2.jpg?v=169929306815248317271698383068" alt="Shades of Pink" />
+
+                
+
+
+                
+
+                
+                </a>
+                
+              </div>
+            
+            
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+
+            
+              
+
+              
+              
+
+              
+              
+
+              <div class="slide">
+
+                
+                <a href="https://betterbuzzcoffee.olo.com/locations/CA">
+                
+
+                <img src="//betterbuzzcoffee.com/cdn/shop/t/44/assets/home-slider-slide-3.jpg?v=39646427256345283611698383068" alt="Buzz Thru Fall Pumpkin Drinks" />
+
+                
+
+
+                
+
+                
+                </a>
+                
+              </div>
+            
+            
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+
+            
+            
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+
+            
+            
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+
+            
+              
+
+              
+              
+
+              
+              
+
+              <div class="slide">
+
+                
+                <a href="https://qrco.de/bch4aC">
+                
+
+                <img src="//betterbuzzcoffee.com/cdn/shop/t/44/assets/home-slider-slide-6.jpg?v=127603694461905313411681409135" alt="Join Better Buzz Rewards!" />
+
+                
+
+
+                
+
+                
+                </a>
+                
+              </div>
+            
+            
+          
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+
+            
+            
+          
+
+          
+          
+
+        </div>
+      </div>
+    </section>
+
+    <div class="modal video">
+      <div class="bg"></div>
+      <a aria-hidden="true" class="close glyph cross"></a>
+        <div class="player columns large-8">
+          <div class="flex-video">
+          </div>
+        </div>
+
+        <div class="caption columns large-4">
+          
+        </div>
+    </div>
+    <div class="modal-mask"></div>
+
+
+  
+
+  
+    <div class="widgets">
+      <div class="small-promos">
+        <div class="row">
+          
+          
+          
+          
+          
+
+
+          
+            
+            
+            
+            <div class="columns large-4">
+              
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<div class="image-text-widget">
+
+	  
+	    <a href="https://betterbuzzcoffee.com/collections/whole-bean-coffee">
+	  
+
+		
+	  	<img src="//betterbuzzcoffee.com/cdn/shop/t/44/assets/home-widget-image-text-1.jpg?v=120025078188581533861663012789" alt="Coffee" />
+	  
+
+	  
+	    <div class="caption">
+	    	<div class="bg"></div>
+	      <div class="inner">
+	        
+	        
+	          <h2><span style="display:inline-block; border: 1px solid #000; padding:8px;"> Our Coffee </span></h2>
+	        
+	      </div>
+	    </div>
+	  
+
+	  
+	    </a>
+	  
+	</div>
+
+
+
+
+
+
+
+            </div>
+            
+
+            
+            
+            <div class="columns large-4">
+              
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<div class="image-text-widget">
+
+	  
+	    <a href="pages/locations">
+	  
+
+		
+	  	<img src="//betterbuzzcoffee.com/cdn/shop/t/44/assets/home-widget-image-text-2.jpg?v=19092485065339556211663012789" alt="Locations" />
+	  
+
+	  
+	    <div class="caption">
+	    	<div class="bg"></div>
+	      <div class="inner">
+	        
+	        
+	          <h2><span style="display:inline-block; border: 1px solid #000; padding:8px;"> Visit Us </span></h2>
+	        
+	      </div>
+	    </div>
+	  
+
+	  
+	    </a>
+	  
+	</div>
+
+
+
+
+
+
+
+            </div>
+            
+
+            
+            
+            <div class="columns large-4">
+              
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<div class="image-text-widget">
+
+	  
+	    <a href="pages/menu">
+	  
+
+		
+	  	<img src="//betterbuzzcoffee.com/cdn/shop/t/44/assets/home-widget-image-text-3.jpg?v=100101325037394308841663012789" alt="Our Menu" />
+	  
+
+	  
+	    <div class="caption">
+	    	<div class="bg"></div>
+	      <div class="inner">
+	        
+	        
+	          <h2><span style="display:inline-block; border: 1px solid #000; padding:8px;"> Eats + Drinks </span></h2>
+	        
+	      </div>
+	    </div>
+	  
+
+	  
+	    </a>
+	  
+	</div>
+
+
+
+
+
+
+
+            </div>
+            
+
+            
+            
+
+          
+        </div>
+      </div>
+    </div>
+  
+
+  
+
+    
+      
+    
+      
+    <div class="product-slider  length--32">
+      <div class="row header">
+        <div class="columns">
+         <h2 class="font-headings clearfix"><a href="/collections/featured-products" title="">Featured Products</a></h2>
+       </div>
+      </div>
+      <div class="row content">
+        
+          <div class="product-grid clearfix">
+            
+
+
+
+
+
+
+  
+  <div class="product-item ">
+    
+    
+                           
+      
+    <div class="image-wrapper  ">
+      
+      
+    
+      
+      <a href="/collections/featured-products/products/unisex-breast-cancer-tee">
+        <img class="lazyOwl" data-src="//betterbuzzcoffee.com/cdn/shop/files/PinkShirt_Shopify_large.png?v=1696010437" src="//betterbuzzcoffee.com/cdn/shop/files/PinkShirt_Shopify_large.png?v=1696010437" alt="Unisex Breast Cancer Tee" />
+      </a>
+    </div><!-- .coll-image-wrap -->
+    
+    <div class="caption">
+      <p class="title">
+        <a href="/collections/featured-products/products/unisex-breast-cancer-tee">
+          Unisex Breast Cancer Tee
+        </a>
+      </p>
+
+      
+
+      
+      <p class="price">
+         <span class="money">$22.99</span>
+      </p>
+      
+    </div><!-- .coll-prod-caption -->
+  </div>
+
+
+
+            
+
+
+
+
+
+
+  
+  <div class="product-item ">
+    
+    
+                           
+      
+    <div class="image-wrapper  ">
+      
+      
+        <div class="circle sold-out"><span>Sold<br />Out</span></div>
+      
+    
+      
+      <a href="/collections/featured-products/products/breast-cancer-awareness-mug">
+        <img class="lazyOwl" data-src="//betterbuzzcoffee.com/cdn/shop/files/pinkbetterbuzzlogo_large.jpg?v=1697048147" src="//betterbuzzcoffee.com/cdn/shop/files/pinkbetterbuzzlogo_large.jpg?v=1697048147" alt="Breast Cancer Awareness Mug" />
+      </a>
+    </div><!-- .coll-image-wrap -->
+    
+    <div class="caption">
+      <p class="title">
+        <a href="/collections/featured-products/products/breast-cancer-awareness-mug">
+          Breast Cancer Awareness Mug
+        </a>
+      </p>
+
+      
+
+      
+      <p class="price">
+         <span class="money">$16.99</span>
+      </p>
+      
+    </div><!-- .coll-prod-caption -->
+  </div>
+
+
+
+            
+
+
+
+
+
+
+  
+  <div class="product-item ">
+    
+    
+                           
+      
+    <div class="image-wrapper  ">
+      
+      
+    
+      
+      <a href="/collections/featured-products/products/camping-mug-1">
+        <img class="lazyOwl" data-src="//betterbuzzcoffee.com/cdn/shop/files/CampingMug_Inside_large.jpg?v=1690312533" src="//betterbuzzcoffee.com/cdn/shop/files/CampingMug_Inside_large.jpg?v=1690312533" alt="Camping Mug" />
+      </a>
+    </div><!-- .coll-image-wrap -->
+    
+    <div class="caption">
+      <p class="title">
+        <a href="/collections/featured-products/products/camping-mug-1">
+          Camping Mug
+        </a>
+      </p>
+
+      
+
+      
+      <p class="price">
+         <span class="money">$14.99</span>
+      </p>
+      
+    </div><!-- .coll-prod-caption -->
+  </div>
+
+
+
+            
+
+
+
+
+
+
+  
+  <div class="product-item ">
+    
+    
+                           
+      
+    <div class="image-wrapper  ">
+      
+      
+    
+      
+      <a href="/collections/featured-products/products/lifes-better-buzzed-tote-bag">
+        <img class="lazyOwl" data-src="//betterbuzzcoffee.com/cdn/shop/products/custom_resized_96c988ee-2658-4f8d-b1bd-dbc26b26e8b5_large.jpg?v=1680020818" src="//betterbuzzcoffee.com/cdn/shop/products/custom_resized_96c988ee-2658-4f8d-b1bd-dbc26b26e8b5_large.jpg?v=1680020818" alt="Life&#39;s Better Buzzed Tote Bag" />
+      </a>
+    </div><!-- .coll-image-wrap -->
+    
+    <div class="caption">
+      <p class="title">
+        <a href="/collections/featured-products/products/lifes-better-buzzed-tote-bag">
+          Life's Better Buzzed Tote Bag
+        </a>
+      </p>
+
+      
+
+      
+      <p class="price">
+         <span class="money">$22.00</span>
+      </p>
+      
+    </div><!-- .coll-prod-caption -->
+  </div>
+
+
+
+            
+
+
+
+
+
+
+  
+  <div class="product-item ">
+    
+    
+                           
+      
+    <div class="image-wrapper  ">
+      
+      
+    
+      
+      <a href="/collections/featured-products/products/lbb-hoodie-black">
+        <img class="lazyOwl" data-src="//betterbuzzcoffee.com/cdn/shop/products/BlackPulloverHoodieFront_large.jpg?v=1657214428" src="//betterbuzzcoffee.com/cdn/shop/products/BlackPulloverHoodieFront_large.jpg?v=1657214428" alt="Unisex BB Logo Pullover Hoodie - Black" />
+      </a>
+    </div><!-- .coll-image-wrap -->
+    
+    <div class="caption">
+      <p class="title">
+        <a href="/collections/featured-products/products/lbb-hoodie-black">
+          Unisex BB Logo Pullover Hoodie - Black
+        </a>
+      </p>
+
+      
+
+      
+      <p class="price">
+         <span class="money">$40.99</span>
+      </p>
+      
+    </div><!-- .coll-prod-caption -->
+  </div>
+
+
+
+            
+
+
+
+
+
+
+  
+  <div class="product-item ">
+    
+    
+                           
+      
+    <div class="image-wrapper  ">
+      
+      
+    
+      
+      <a href="/collections/featured-products/products/best-drink-ever-home-barista-kit">
+        <img class="lazyOwl" data-src="//betterbuzzcoffee.com/cdn/shop/products/BDEHomeBaristaKitFront_Beans_large.jpg?v=1657216172" src="//betterbuzzcoffee.com/cdn/shop/products/BDEHomeBaristaKitFront_Beans_large.jpg?v=1657216172" alt="Best Drink Ever Home Barista Kit // Whole Bean Coffee &amp; Vanilla" />
+      </a>
+    </div><!-- .coll-image-wrap -->
+    
+    <div class="caption">
+      <p class="title">
+        <a href="/collections/featured-products/products/best-drink-ever-home-barista-kit">
+          Best Drink Ever Home Barista Kit // Whole Bean Coffee & Vanilla
+        </a>
+      </p>
+
+      
+
+      
+      <p class="price">
+         <span class="money">$26.99</span>
+      </p>
+      
+    </div><!-- .coll-prod-caption -->
+  </div>
+
+
+
+            
+
+
+
+
+
+
+  
+  <div class="product-item ">
+    
+    
+    <style>
+/*       .add-to-cart-quick {
+        opacity: -1 !important;
+      } */
+    </style>
+    
+                           
+      
+    <div class="image-wrapper  ">
+      
+      
+    
+      
+      <a href="/collections/featured-products/products/best-subscription-ever">
+        <img class="lazyOwl" data-src="//betterbuzzcoffee.com/cdn/shop/products/2BagsBuzzLife_VanillaBuzz_large.jpg?v=1664893144" src="//betterbuzzcoffee.com/cdn/shop/products/2BagsBuzzLife_VanillaBuzz_large.jpg?v=1664893144" alt="Best Subscription Ever" />
+      </a>
+    </div><!-- .coll-image-wrap -->
+    
+    <div class="caption">
+      <p class="title">
+        <a href="/collections/featured-products/products/best-subscription-ever">
+          Best Subscription Ever
+        </a>
+      </p>
+
+      
+
+      
+      <p class="price">
+         <span class="money">$40.77</span>
+      </p>
+      
+    </div><!-- .coll-prod-caption -->
+  </div>
+
+
+
+            
+
+
+
+
+
+
+  
+  <div class="product-item ">
+    
+    
+                           
+      
+    <div class="image-wrapper  ">
+      
+      
+    
+      
+      <a href="/collections/featured-products/products/rwanda">
+        <img class="lazyOwl" data-src="//betterbuzzcoffee.com/cdn/shop/files/RwandaBagwbee_large.jpg?v=1694554273" src="//betterbuzzcoffee.com/cdn/shop/files/RwandaBagwbee_large.jpg?v=1694554273" alt="Rwanda" />
+      </a>
+    </div><!-- .coll-image-wrap -->
+    
+    <div class="caption">
+      <p class="title">
+        <a href="/collections/featured-products/products/rwanda">
+          Rwanda
+        </a>
+      </p>
+
+      
+
+      
+      <p class="price">
+         <span class="money">$19.49</span>
+      </p>
+      
+    </div><!-- .coll-prod-caption -->
+  </div>
+
+
+
+            
+
+
+
+
+
+
+  
+  <div class="product-item ">
+    
+    
+                           
+      
+    <div class="image-wrapper  ">
+      
+      
+    
+      
+      <a href="/collections/featured-products/products/glass-can">
+        <img class="lazyOwl" data-src="//betterbuzzcoffee.com/cdn/shop/products/glasscan-back1_032cdad7-0a48-4644-b5d8-db45223ad1df_large.png?v=1587961331" src="//betterbuzzcoffee.com/cdn/shop/products/glasscan-back1_032cdad7-0a48-4644-b5d8-db45223ad1df_large.png?v=1587961331" alt="&quot;Life&#39;s Better Buzzed&quot; Glass Can - Better Buzz Coffee" />
+      </a>
+    </div><!-- .coll-image-wrap -->
+    
+    <div class="caption">
+      <p class="title">
+        <a href="/collections/featured-products/products/glass-can">
+          "Life's Better Buzzed" Glass W/ Gold Can 16 oz
+        </a>
+      </p>
+
+      
+
+      
+      <p class="price">
+         <span class="money">$20.99</span>
+      </p>
+      
+    </div><!-- .coll-prod-caption -->
+  </div>
+
+
+
+            
+
+
+
+
+
+
+  
+  <div class="product-item ">
+    
+    
+                           
+      
+    <div class="image-wrapper  ">
+      
+      
+    
+      
+      <a href="/collections/featured-products/products/i-like-you-better-when-im-buzzed">
+        <img class="lazyOwl" data-src="//betterbuzzcoffee.com/cdn/shop/products/ilybwib_large.jpg?v=1675970336" src="//betterbuzzcoffee.com/cdn/shop/products/ilybwib_large.jpg?v=1675970336" alt="I Like You Better When I&#39;m Buzzed Snapback Hat" />
+      </a>
+    </div><!-- .coll-image-wrap -->
+    
+    <div class="caption">
+      <p class="title">
+        <a href="/collections/featured-products/products/i-like-you-better-when-im-buzzed">
+          I Like You Better When I'm Buzzed Snapback Hat
+        </a>
+      </p>
+
+      
+
+      
+      <p class="price">
+         <span class="money">$20.00</span>
+      </p>
+      
+    </div><!-- .coll-prod-caption -->
+  </div>
+
+
+
+            
+
+
+
+
+
+
+  
+  <div class="product-item ">
+    
+    
+                           
+      
+    <div class="image-wrapper  ">
+      
+      
+    
+      
+      <a href="/collections/featured-products/products/lbb-tie-dye-hoodie-sunset-swirl">
+        <img class="lazyOwl" data-src="//betterbuzzcoffee.com/cdn/shop/products/custom_resized_4c447c65-c1f5-4d62-81e4-c71cdbfa98dd_large.jpg?v=1680021770" src="//betterbuzzcoffee.com/cdn/shop/products/custom_resized_4c447c65-c1f5-4d62-81e4-c71cdbfa98dd_large.jpg?v=1680021770" alt="LBB Tie Dye Hoodie - Sunset Swirl" />
+      </a>
+    </div><!-- .coll-image-wrap -->
+    
+    <div class="caption">
+      <p class="title">
+        <a href="/collections/featured-products/products/lbb-tie-dye-hoodie-sunset-swirl">
+          LBB Tie Dye Hoodie - Sunset Swirl
+        </a>
+      </p>
+
+      
+
+      
+      <p class="price">
+         <span class="money">$44.99</span>
+      </p>
+      
+    </div><!-- .coll-prod-caption -->
+  </div>
+
+
+
+            
+
+
+
+
+
+
+  
+  <div class="product-item ">
+    
+    
+                           
+      
+    <div class="image-wrapper  ">
+      
+      
+    
+      
+      <a href="/collections/featured-products/products/lbb-tie-dye-hoodie-dusty-pink">
+        <img class="lazyOwl" data-src="//betterbuzzcoffee.com/cdn/shop/products/REAL_1of8_large.jpg?v=1659451008" src="//betterbuzzcoffee.com/cdn/shop/products/REAL_1of8_large.jpg?v=1659451008" alt="LBB Tie Dye Hoodie - Dusty Pink" />
+      </a>
+    </div><!-- .coll-image-wrap -->
+    
+    <div class="caption">
+      <p class="title">
+        <a href="/collections/featured-products/products/lbb-tie-dye-hoodie-dusty-pink">
+          LBB Tie Dye Hoodie - Dusty Pink
+        </a>
+      </p>
+
+      
+
+      
+      <p class="price">
+         <span class="money">$44.99</span>
+      </p>
+      
+    </div><!-- .coll-prod-caption -->
+  </div>
+
+
+
+            
+
+
+
+
+
+
+  
+  <div class="product-item ">
+    
+    
+                           
+      
+    <div class="image-wrapper  ">
+      
+      
+    
+      
+      <a href="/collections/featured-products/products/black-tie-dye-hoodie">
+        <img class="lazyOwl" data-src="//betterbuzzcoffee.com/cdn/shop/products/BlackTie-dyeHoodieFrontBB_large.jpg?v=1657213721" src="//betterbuzzcoffee.com/cdn/shop/products/BlackTie-dyeHoodieFrontBB_large.jpg?v=1657213721" alt="LBB Tie Dye Hoodie - Black" />
+      </a>
+    </div><!-- .coll-image-wrap -->
+    
+    <div class="caption">
+      <p class="title">
+        <a href="/collections/featured-products/products/black-tie-dye-hoodie">
+          LBB Tie Dye Hoodie - Black
+        </a>
+      </p>
+
+      
+
+      
+      <p class="price">
+         <span class="money">$44.99</span>
+      </p>
+      
+    </div><!-- .coll-prod-caption -->
+  </div>
+
+
+
+            
+
+
+
+
+
+
+  
+  <div class="product-item ">
+    
+    
+                           
+      
+    <div class="image-wrapper  ">
+      
+      
+    
+      
+      <a href="/collections/featured-products/products/14oz-handled-mug-1">
+        <img class="lazyOwl" data-src="//betterbuzzcoffee.com/cdn/shop/products/BlackCafeMug-Back_large.png?v=1587356487" src="//betterbuzzcoffee.com/cdn/shop/products/BlackCafeMug-Back_large.png?v=1587356487" alt="Better Buzz Logo Cafe Mug - Better Buzz Coffee" />
+      </a>
+    </div><!-- .coll-image-wrap -->
+    
+    <div class="caption">
+      <p class="title">
+        <a href="/collections/featured-products/products/14oz-handled-mug-1">
+          "Life's Better Buzzed" Porcelain Mug - 16 oz Black
+        </a>
+      </p>
+
+      
+
+      
+      <p class="price">
+         <span class="money">$14.99</span>
+      </p>
+      
+    </div><!-- .coll-prod-caption -->
+  </div>
+
+
+
+            
+
+
+
+
+
+
+  
+  <div class="product-item ">
+    
+    
+                           
+      
+    <div class="image-wrapper  ">
+      
+      
+    
+      
+      <a href="/collections/featured-products/products/klean-kanteen">
+        <img class="lazyOwl" data-src="//betterbuzzcoffee.com/cdn/shop/products/KleanKanteenFront_large.jpg?v=1657212777" src="//betterbuzzcoffee.com/cdn/shop/products/KleanKanteenFront_large.jpg?v=1657212777" alt="Klean Kanteen &quot;Lifes Better Buzzed&quot; Tumbler - 16 oz Black" />
+      </a>
+    </div><!-- .coll-image-wrap -->
+    
+    <div class="caption">
+      <p class="title">
+        <a href="/collections/featured-products/products/klean-kanteen">
+          Klean Kanteen "Lifes Better Buzzed" Tumbler - 16 oz Black
+        </a>
+      </p>
+
+      
+
+      
+      <p class="price">
+         <span class="money">$30.95</span>
+      </p>
+      
+    </div><!-- .coll-prod-caption -->
+  </div>
+
+
+
+            
+
+
+
+
+
+
+  
+  <div class="product-item ">
+    
+    
+                           
+      
+    <div class="image-wrapper  ">
+      
+      
+    
+      
+      <a href="/collections/featured-products/products/vanilla-buzz-shots">
+        <img class="lazyOwl" data-src="//betterbuzzcoffee.com/cdn/shop/products/VanillaBuzzShots-1copy_large.jpg?v=1637796378" src="//betterbuzzcoffee.com/cdn/shop/products/VanillaBuzzShots-1copy_large.jpg?v=1637796378" alt="Vanilla Buzz Shots" />
+      </a>
+    </div><!-- .coll-image-wrap -->
+    
+    <div class="caption">
+      <p class="title">
+        <a href="/collections/featured-products/products/vanilla-buzz-shots">
+          Vanilla Buzz Shots
+        </a>
+      </p>
+
+      
+
+      
+      <p class="price">
+         <span class="money">$23.99</span>
+      </p>
+      
+    </div><!-- .coll-prod-caption -->
+  </div>
+
+
+
+            
+          </div>
+        
+      </div>
+    </div><!-- #product-slider -->
+
+
+  
+
+  
+
+  
+    <div class="widgets">
+
+    
+    
+    
+    
+
+    
+    </div> <!-- .widgets -->
+  
+
+
+  <script data-locksmith>
+    var load = function () {
+
+          Locksmith.ping();
+
+
+      Locksmith.util.on('submit', 'locksmith-resource-form', function (event) {
+        event.preventDefault();
+        var data = Locksmith.util.serializeForm(event.target);
+        Locksmith.postResource(data, { spinner: false, container: 'locksmith-content' });
+      });
+
+      Locksmith.util.on('click', 'locksmith-manual-trigger', function (event) {
+        event.preventDefault();
+        Locksmith.postResource({}, { spinner: true, container: document });
+      });
+
+      Locksmith.submitPasscode = function (passcode) {
+        Locksmith.postResource(
+          { passcode: passcode },
+          { spinner: false, container: 'locksmith-content' }
+        );
+      };
+    };
+
+    if (typeof Locksmith !== 'undefined') {
+      load();
+    } else {
+      window.addEventListener('load', load);
+    }
+  </script>
+  </main>
+
+  <footer class="main-footer">
+
+    <div class="row bottom">
+      <div class="column-1 large-4 columns">
+        <h2 class="title">life's better buzzed®</h2>
+        <div class="content">
+          <p class="text">San Diego<br />
+Small Batch Coffee Roasters<br />
+Est. 2002</p>
+          <div class="powered-by"><a target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore"> </a></div>
+        </div>
+
+      </div>
+      <div class="column-2 large-4 columns">
+        <h2 class="title">Info</h2>
+        
+        <div class="content">
+          
+            
+          
+            <ul class="footer-nav plain-list" role="navigation">
+            
+<li><a href="/pages/about-us">About us</a></li>
+            
+<li><a href="/pages/locations-map">Buzz Locator</a></li>
+            
+<li><a href="/pages/wholesale">Wholesale</a></li>
+            
+<li><a href="/blogs/the-buzz-life-chronicles">Blog</a></li>
+            
+<li><a href="/pages/drop-a-line">Drop-A-Line</a></li>
+            
+<li><a href="/pages/terms-conditions">Terms & Conditions</a></li>
+            
+<li><a href="/pages/accessibility">Accessibility</a></li>
+            
+<li><a href="/pages/privacy-policy">Privacy Policy</a></li>
+            
+<li><a href="/pages/coffee-pod-giveaway-4-7-2022">Contests & Giveaways</a></li>
+            
+            </ul>
+          
+        </div>
+      </div>
+
+
+      <div class="column-3 large-4 columns">
+        
+          
+          
+            <h2 class="title">SUBSCRIBE TO EMAILS FOR 10% OFF YOUR ORDER...</h2>
+          
+
+          <div class="content" id="mailing-list-module">
+            
+            
+
+            
+            
+            
+            
+              <div style="margin-bottom:1rem; margin-top:2.3rem;">
+				 <a href="https://iframe.punchh.com/whitelabel/BetterBuzzCoffee/ecrm" target="_blank">                 
+              <button class="signup-button">Subscribe Now</button>                	
+            	</a>
+              </div>
+            
+            
+          
+
+          <div class="social-follow">
+            <a aria-hidden="true" target="_blank" class="glyph facebook" href="https://www.facebook.com/betterbuzzcoffee/"></a>
+            
+            <a aria-hidden="true" target="_blank" class="glyph instagram" href="https://www.instagram.com/betterbuzz/"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram icon</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"></path></svg></a>
+            
+            
+            
+            
+            
+
+            
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    
+      
+        <div class="row">
+          <div class="columns">
+              <ul class="payment-options">
+                
+                  <li>
+                    <span class="icon icon-amazon_payments" aria-hidden="true"></span>
+                  </li>
+                
+                  <li>
+                    <span class="icon icon-american_express" aria-hidden="true"></span>
+                  </li>
+                
+                  <li>
+                    <span class="icon icon-apple_pay" aria-hidden="true"></span>
+                  </li>
+                
+                  <li>
+                    <span class="icon icon-discover" aria-hidden="true"></span>
+                  </li>
+                
+                  <li>
+                    <span class="icon icon-facebook_pay" aria-hidden="true"></span>
+                  </li>
+                
+                  <li>
+                    <span class="icon icon-google_pay" aria-hidden="true"></span>
+                  </li>
+                
+                  <li>
+                    <span class="icon icon-master" aria-hidden="true"></span>
+                  </li>
+                
+                  <li>
+                    <span class="icon icon-shopify_pay" aria-hidden="true"></span>
+                  </li>
+                
+                  <li>
+                    <span class="icon icon-visa" aria-hidden="true"></span>
+                  </li>
+                
+              </ul>
+          </div>
+        </div>
+      
+    
+  </footer>
+
+
+
+  
+<script type="text/javascript">
+!function(){var t=function(){var t=document.createElement("script");t.src="https://ws.audioeye.com/ae.js",t.type="text/javascript",t.setAttribute("async",""),document.getElementsByTagName("body")[0].appendChild(t)};"complete"!==document.readyState?window.addEventListener?window.addEventListener("load",t):window.attachEvent&&window.attachEvent("onload",t):t()}()
+</script>
+
+
+<!-- The Modal -->
+<div id="popup-modal" class="popup-modal">
+
+  <!-- Modal content -->
+  <div class="popup-modal-content">
+    <div class="popup-modal-header">
+      <button class="popup-close"></button>
+    </div>
+    <div class="popup-modal-body">
+        <div class="popup-modal-messsage-holder">
+            <div class="popup-modal-messsage">
+                <span class="popup-modal-messsage-text-1">
+                    Join<br>
+                    Rewards<br>
+                    &amp; Earn a</span><br>
+                <span class="popup-modal-messsage-text-2">
+                    Free<br>
+                    drink</span><br>
+                <span class="popup-modal-messsage-text-3">
+                    after your<br>first purchase!</span>
+            </div>
+        </div>
+        <div class="popup-modal-btn"><a href="https://qrco.de/bch4aC" target="_blank">DOWNLOAD APP</a></div>
+        <div class="popup-modal-text">
+            <a href="https://betterbuzzcoffee.com/pages/better-buzz-rewards">Learn more</a><br>
+            Free drink earned after your first purchase.<br>
+            Cannot be combined with other offers or promotions. 
+        </div>
+    </div>
+    <div class="popup-modal-footer">
+    </div>
+  </div>
+
+</div>
+
+
+  <script src="//betterbuzzcoffee.com/cdn/shop/t/44/assets/custom.js?v=25069776696393502761663012789" type="text/javascript"></script>
+  <script src="//betterbuzzcoffee.com/cdn/shop/t/44/assets/custom-popup.js?v=178173707103469218651666988781" type="text/javascript"></script>
+  <script src="//betterbuzzcoffee.com/cdn/shop/t/44/assets/custom-ada.js?v=163857021208483005531667242859" type="text/javascript"></script>
+  <script src="//betterbuzzcoffee.com/cdn/shop/t/44/assets/custom-dropdown.js?v=72982328638887760381675917341" type="text/javascript"></script>
+  
+
+	<script async src="https://loox.io/widget/Vmo1qLTezZ/loox.1692143838324.js?shop=better-buzz-coffee.myshopify.com"></script>
+</body>
+</html>
